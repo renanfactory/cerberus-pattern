@@ -1,0 +1,604 @@
+﻿
+$num: 0;
+
+@while $num < 31 {
+    .pa-#{$num} {
+        padding: $num +0px !important;
+    }
+    $num: $num +5;
+}
+
+$num: 0;
+
+@while $num < 51 {
+    .pt-#{$num} {
+        padding-top: $num +0px !important;
+    }
+    $num: $num +5;
+}
+
+$num: 0;
+
+@while $num < 51 {
+    .pb-#{$num} {
+        padding-bottom: $num +0px !important;
+    }
+    $num: $num +5;
+}
+
+$num: 0;
+
+@while $num < 51 {
+    .pl-#{$num} {
+        padding-left: $num +0px !important;
+    }
+    $num: $num +5;
+}
+
+$num: 0;
+
+@while $num < 51 {
+    .pr-#{$num} {
+        padding-right: $num +0px !important;
+    }
+    $num: $num +5;
+}
+
+$num: 0;
+
+@while $num < 31 {
+    .ma-#{$num} {
+        margin: $num +0px !important;
+    }
+    $num: $num +5;
+}
+
+$num: 0;
+
+@while $num < 96 {
+    .mt-#{$num} {
+        margin-top: $num +0px !important;
+    }
+    $num: $num +5;
+}
+
+$num: 0;
+
+@while $num < 96 {
+    .mb-#{$num} {
+        margin-bottom: $num +0px !important;
+    }
+    $num: $num +5;
+}
+
+$num: 0;
+
+@while $num < 61 {
+    .ml-#{$num} {
+        margin-left: $num +0px !important;
+    }
+    $num: $num +5;
+}
+
+$num: 0;
+
+@while $num < 61 {
+    .mr-#{$num} {
+        margin-right: $num +0px !important;
+    }
+    $num: $num +5;
+}
+
+.ml-auto {
+    margin-left: auto !important;
+}
+
+.mr-auto {
+    margin-right: auto !important;
+}
+
+
+.no-float {
+    float: none !important;
+}
+
+.overflow-hide {
+    overflow: hidden !important;
+}
+
+.clearfix {
+    @include clear;
+}
+
+.preloader-it {
+    background: $white;
+    position: fixed;
+    z-index: 10001;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.bg-green,
+.bg-success {
+    background: $green !important;
+}
+
+.bg-seagreen {
+    background: $seagreen !important;
+}
+
+.bg-grey {
+    background: $grey !important;
+}
+
+.bg-yellow,
+.bg-warning {
+    background: $yellow !important;
+}
+
+.bg-red,
+.bg-danger {
+    background: $red !important;
+}
+
+.bg-blue,
+.bg-primary {
+    background: $blue !important;
+}
+
+.bg-pink,
+.bg-info {
+    background: $pink !important;
+}
+
+.bg-purple {
+    background: $purple !important;
+}
+
+.bg-skyblue {
+    background: $skyblue !important;
+}
+
+.bg-orange {
+    background: $orange !important;
+}
+
+.bg-orange-light-1 {
+    background: $orange_light_1 !important;
+}
+
+.bg-orange-light-2 {
+    background: $orange_light_2 !important;
+}
+
+.bg-orange-light-3 {
+    background: $orange_light_3 !important;
+}
+
+.bg-orange-light-4 {
+    background: $orange_light_4 !important;
+}
+
+.bg-gold {
+    background: $gold !important;
+}
+
+.bg-brown {
+    background: $brown !important;
+}
+
+.bg-beige {
+    background: $beige !important;
+}
+
+.bg-light {
+    background: $white !important;
+}
+
+.bg-dark {
+    background: $black !important;
+}
+
+.bg-twitter {
+    background: $twitter_blue !important;
+}
+
+.txt-dark {
+    color: $black !important;
+}
+
+.txt-light {
+    color: $white !important;
+}
+
+.txt-grey {
+    color: $grey !important;
+}
+
+.txt-light-grey {
+    color: $light_grey !important;
+}
+
+.txt-info,
+.text-info {
+    color: $pink !important;
+}
+
+.txt-warning,
+.text-warning {
+    color: $yellow !important;
+}
+
+.txt-primary,
+.text-primary {
+    color: $blue !important;
+}
+
+.txt-success,
+.text-success {
+    color: $green !important;
+}
+
+.txt-danger,
+.text-danger {
+    color: $red !important;
+}
+
+.txt-purple {
+    color: $purple !important;
+}
+
+.txt-violet {
+    color: $violet !important;
+}
+
+.txt-skyblue {
+    color: $skyblue !important;
+}
+
+.txt-beige {
+    color: $beige !important;
+}
+
+.txt-gold {
+    color: $gold !important;
+}
+
+.txt-brown {
+    color: $brown !important;
+}
+
+.txt-orange {
+    color: $orange !important;
+}
+
+.txt-orange-light-1 {
+    color: $orange-light-1;
+}
+
+.txt-orange-light-2 {
+    color: $orange-light-2;
+}
+
+.font-10 {
+    font-size: 10px !important;
+}
+
+.font-11 {
+    font-size: 11px !important;
+}
+
+.font-12 {
+    font-size: 12px !important;
+}
+
+.font-13 {
+    font-size: 13px !important;
+}
+
+.font-15 {
+    font-size: 15px !important;
+}
+
+.font-16 {
+    font-size: 16px !important;
+}
+
+.font-18 {
+    font-size: 18px !important;
+}
+
+.font-20 {
+    font-size: 20px !important;
+}
+
+.font-21 {
+    font-size: 21px !important;
+}
+
+.font-22 {
+    font-size: 22px !important;
+}
+
+.font-24 {
+    font-size: 24px !important;
+}
+
+.font-28 {
+    font-size: 28px !important;
+}
+
+.font-32 {
+    font-size: 32px !important;
+}
+
+.font-48 {
+    font-size: 48px !important;
+}
+
+.weight-300 {
+    font-weight: 300 !important;
+}
+
+.weight-500 {
+    font-weight: 500 !important;
+}
+
+.weight-600 {
+    font-weight: 600 !important;
+}
+
+.head-font {
+    font-family: $font_main !important;
+}
+
+.main-font {
+    font-family: $font_main !important;
+}
+
+.capitalize-font {
+    text-transform: capitalize !important;
+}
+
+.uppercase-font {
+    text-transform: uppercase !important;
+}
+
+.nonecase-font {
+    text-transform: none !important;
+}
+
+.inline-block {
+    display: inline-block !important;
+}
+
+.block {
+    display: block !important;
+}
+
+.flex {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+}
+
+.flex-middle {
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+}
+
+.table-struct {
+    display: table !important;
+}
+
+.table-cell {
+    display: table-cell !important;
+}
+
+.vertical-align-top {
+    vertical-align: top !important;
+}
+
+.vertical-align-middle {
+    vertical-align: middle !important;
+}
+
+.vertical-align-bottom {
+    vertical-align: bottom !important;
+}
+
+.full-width {
+    width: 100% !important;
+}
+
+.half-width {
+    width: 50% !important;
+}
+
+.auto-width {
+    width: auto !important;
+}
+
+.relative {
+    position: relative !important;
+}
+
+.border-none {
+    border: none !important;
+}
+
+small {
+    color: $grey;
+    padding-left: 5px;
+}
+
+.text-muted {
+    color: $grey;
+}
+
+.truncate {
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.mobile-only-view {
+    display: none !important;
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-top: 1px solid $green;
+
+    &.light-grey-hr {
+        border-top: 1px solid $light_grey;
+    }
+}
+
+.seprator-block {
+    margin-bottom: 40px;
+}
+
+/* Effect 1: YouTube loading */
+@import "Basic/Effect1.scss";
+/*typography*/
+@import "Basic/Typography.scss";
+/*buttons*/
+@import "Basic/Buttons.scss";
+/*MDL Shadow*/
+@import "Basic/MDLShadow.scss";
+/* Admin Basic */
+@import "Basic/AdminBasic.scss";
+/* Top Navigation */
+@import "Basic/TopNavigation.scss";
+/*Form*/
+@import "Basic/Form.scss";
+/*Form-Wizard*/
+@import "Basic/FormWizard.scss";
+/*Product Details*/
+@import "Basic/ProductDetails.scss";
+/*Popover*/
+@import "Basic/Popover.scss";
+/*Typerhead*/
+@import "Basic/Typerhead.scss";
+/*Editors*/
+@import "Basic/Editors.scss";
+/*Accordion*/
+@import "Basic/Accordion.scss";
+/*Tabs*/
+@import "Basic/Tabs.scss";
+/*Table*/
+@import "Basic/Table.scss";
+/*Charts Label*/
+@import "Basic/ChartsLabel.scss";
+/*Morris Chart*/
+@import "Basic/MorrisChart.scss";
+/*Flot Chart*/
+@import "Basic/FlotChart.scss";
+/*Chartist*/
+@import "Basic/Chartist.scss";
+/*Easy pie chart*/
+@import "Basic/EasyPieChart.scss";
+/*Skills Counter*/
+@import "Basic/SkillsCounter.scss";
+/*Nestable*/
+@import "Basic/Nestable.scss";
+/*Treeview*/
+@import "Basic/Treeview.scss";
+/*Modals*/
+@import "Basic/Modals.scss";
+/*Sweet-alert*/
+@import "Basic/SweetAlert.scss";
+/*Tooltop*/
+@import "Basic/Tooltop.scss";
+/*Icons*/
+@import "Basic/Icons.scss";
+/*File Upload*/
+@import "Basic/FileUpload.scss";
+/*File Manager*/
+@import "Basic/FileManager.scss";
+/*Carousel*/
+@import "Basic/Carousel.scss";
+/*Testimonial slider*/
+@import "Basic/TestimonialSlider.scss";
+/*Twitter slider*/
+@import "Basic/TwitterSlider.scss";
+/*Instafeed*/
+@import "Basic/Instafeed.scss";
+/*Range Slider*/
+@import "Basic/RangeSlider.scss";
+/*Gallery*/
+@import "Basic/Gallery.scss";
+/*Panel*/
+@import "Basic/Panel.scss";
+/*Pricing Table*/
+@import "Basic/PricingTable.scss";
+/*Dropdown*/
+@import "Basic/Dropdown.scss";
+/*Weather*/
+@import "Basic/Weather.scss";
+/*Sparkline*/
+@import "Basic/Sparkline.scss";
+/*Pagination*/
+@import "Basic/Pagination.scss";
+/*Pager*/
+@import "Basic/Pager.scss";
+/*Labels*/
+@import "Basic/Labels.scss";
+/*Badge*/
+@import "Basic/Badge.scss";
+/*Task Panel*/
+@import "Basic/TaskPanel.scss";
+/*Vecotor Map*/
+@import "Basic/VecotorMap.scss";
+/*Progressbar*/
+@import "Basic/Progressbar.scss";
+/*Search Bar*/
+@import "Basic/SearchBar.scss";
+/*Chat UI*/
+@import "Basic/ChatUI.scss";
+/*Widgets*/
+@import "Basic/Widgets.scss";
+/*Profile*/
+@import "Basic/Profile.scss";
+/*Followers*/
+@import "Basic/Followers.scss";
+/*Small graph*/
+@import "Basic/SmallGraph.scss";
+/*Timeline*/
+@import "Basic/Timeline.scss";
+/*Caledar*/
+@import "Basic/Caledar.scss";
+/*Todo List*/
+@import "Basic/TodoList.scss";
+/*Activity*/
+@import "Basic/Activity.scss";  
+/*Message Box*/
+@import "Basic/MessageBox.scss";
+/*Inbox*/
+@import "Basic/Inbox.scss";
+/*Contact List*/
+@import "Basic/ContactList.scss";
+/*Contact Cards*/
+@import "Basic/ContactCards.scss";
+/*Login Form*/
+@import "Basic/LoginForm.scss";
+/*Error Page*/
+@import "Basic/ErrorPage.scss";
+/*Products*/
+@import "Basic/Products.scss";
+/*Cropperjs*/
+@import "Basic/Cropperjs.scss";

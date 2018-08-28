@@ -1,0 +1,63 @@
+﻿
+.panel-pricing {
+    border-radius: 0;
+    border: 1px solid $light_grey;
+
+    .list-group-item {
+        background: transparent;
+        border: none;
+        border-radius: 0;
+    }
+
+    .panel-body {
+        hr {
+            border-color: $light_grey;
+            border-width: 2px;
+        }
+
+        .list-group {
+            hr {
+                border-width: 1px;
+            }
+
+            .list-group-item {
+                i {
+                    color: $grey;
+                    padding-right: 15px;
+                }
+            }
+        }
+    }
+
+    .panel-heading {
+        i {
+            display: block;
+            font-size: 30px;
+            margin-bottom: 15px;
+            margin-top: 20px;
+            color: $orange;
+        }
+
+        .panel-price {
+            color: $black;
+            font-size: 38px;
+            display: block;
+            text-transform: capitalize;
+
+            .pricing-dolor {
+                display: inline-block;
+                font-size: 18px;
+                padding-top: 10px;
+                vertical-align: top;
+            }
+        }
+    }
+
+    .panel-footer {
+        border: none;
+
+        .btn {
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,215 @@
+﻿.wizard {
+    .content {
+        background: transparent;
+        border-radius: 0;
+        min-height: 100px;
+        margin: 0;
+        border: none;
+        border-top: none;
+        margin-bottom: 30px;
+
+        .table-responsive {
+            margin: 0 -30px;
+        }
+
+        > .body {
+            width: 100%;
+            height: auto;
+            padding: 30px;
+            position: relative;
+
+            input {
+                @extend .form-control;
+            }
+
+            input.error {
+                border-color: rgba(241, 91, 38, 0.5) !important;
+                background: transparent;
+            }
+        }
+    }
+
+    .steps {
+        .number {
+            font-size: 18px;
+            color: $grey;
+        }
+
+        ul {
+            display: table;
+            width: 100%;
+
+            > li {
+                display: table-cell;
+                background: $light_grey;
+
+                &.done {
+                    background: $orange;
+                }
+
+                &.current {
+                    background: $orange_dark_3 !important;
+                }
+
+                > a {
+                    margin: 0;
+                    padding: 14px 20px;
+                    background: transparent !important;
+
+                    &:hover, &:focus, &:active {
+                        margin: 0;
+                        padding: 14px 20px;
+                    }
+                }
+
+                span.number {
+                    border-radius: 100%;
+                    border: 1px solid rgba(255, 255, 255, 0.2);
+                    width: 35px;
+                    height: 35px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    padding-top: 3px;
+                    margin-right: 8px;
+                    text-align: center;
+                    background: rgb(255, 255, 255);
+                }
+
+                &.disabled {
+                    a {
+                        cursor: not-allowed !important;
+                    }
+                }
+            }
+        }
+    }
+
+    &.shoping-cart {
+        > .steps > ul > li {
+            width: 33.33%;
+        }
+    }
+
+    > .actions {
+        padding-right: 15px;
+
+        > ul {
+            > li {
+                background: transparent none repeat scroll 0 0;
+                display: inline-block;
+                float: none;
+                margin: 0;
+                margin-left: 10px;
+                padding: 0;
+            }
+        }
+    }
+
+    .bootstrap-touchspin {
+        width: 70px;
+    }
+}
+
+.wizard > .actions .disabled a, .wizard > .actions .disabled a:hover, .wizard > .actions .disabled a:active, .wizard > .actions a, .wizard > .actions a:hover, .wizard > .actions a:active {
+    @extend .btn;
+    @extend .btn-default;
+    @extend .btn-sm;
+}
+
+.wizard > .actions .disabled a, .wizard > .actions .disabled a:hover {
+    box-shadow: none;
+    cursor: not-allowed;
+    opacity: 0.65;
+}
+
+.wizard > .content > .body label.error {
+    display: none !important;
+}
+
+.current {
+    color: inherit !important;
+}
+
+.wizard > .content > .body ul.cards > li {
+    display: inline-block;
+}
+
+.tabcontrol {
+    > .content {
+        border-top: medium none;
+        height: auto;
+        padding-top: 0;
+
+        > .body {
+            position: relative;
+            height: auto;
+            padding: 15px 0 0 0;
+            width: 100%;
+        }
+    }
+}
+
+.tabcontrol > .steps {
+    > ul {
+        border-bottom: 1px solid #f7f7f9;
+        margin-top: 0;
+        float: left;
+        width: 100%;
+        top: 0;
+
+        > li {
+            border: medium none;
+            margin: 0 5px 0 0;
+            padding: 0;
+            background: transparent;
+
+            &:hover, &:focus, &:active {
+                background: transparent;
+                border: medium none;
+            }
+
+            > a {
+                background: transparent;
+                border: none;
+                padding: 10px 20px;
+                color: $grey;
+                margin: 0;
+                border-radius: 0;
+                text-transform: capitalize;
+
+                &:active, &:focus, &:hover {
+                    color: $black;
+                }
+            }
+
+            &.current {
+                border: medium none;
+                padding: 0;
+
+                > a {
+                    color: $black;
+                    padding: 10px 20px;
+                    border-bottom: 3px solid $green;
+
+                    &:active, &:focus, &:hover {
+                        color: $black;
+                    }
+                }
+            }
+
+            &:first-child {
+                > a {
+                    border-top-left-radius: 10px;
+                }
+            }
+
+            &:last-child {
+                > a {
+                    border-top-right-radius: 10px;
+                }
+
+                margin-right: 0;
+            }
+        }
+    }
+}

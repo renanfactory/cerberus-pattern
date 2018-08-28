@@ -1,0 +1,133 @@
+
+.flex-stat {
+    overflow: hidden;
+
+    li {
+        float: left;
+        width: 33.33%;
+        text-align: center;
+
+        > span {
+            text-transform: capitalize;
+        }
+    }
+
+    &.flex-stat-2 {
+        .initial {
+            display: inline-block;
+            vertical-align: top;
+            padding-top: 5px;
+            font-size: 20px;
+        }
+
+        .data-rep {
+            font-size: 32px;
+        }
+    }
+
+    &.flex-stat-3 {
+        padding-top: 25px;
+        padding-bottom: 45px;
+
+        .initial {
+            display: inline-block;
+            vertical-align: top;
+            padding-top: 10px;
+            font-size: 28px;
+        }
+
+        .data-rep {
+            font-size: 48px;
+        }
+    }
+}
+
+.sm-data-box {
+    .counter {
+        font-size: 24px;
+    }
+
+    .data-wrap-left,
+    .data-wrap-right {
+        padding-top: 19px;
+        padding-bottom: 19px;
+        min-height: 99px;
+    }
+
+    .data-wrap-right {
+        .data-right-rep-icon {
+            display: inline-block;
+            font-size: 40px;
+            padding-top: 10px;
+        }
+    }
+
+    &.data-with-border {
+        .data-wrap-left {
+            border-right: 1px solid rgba(135,135,135,.2);
+        }
+    }
+}
+
+.sm-data-box-1 {
+    .cus-sat-stat {
+        font-size: 36px;
+    }
+}
+
+.sm-data-box-2 {
+    .table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+        padding: 12.5px 15px;
+    }
+}
+
+.sm-data-box-3 {
+    .panel-heading {
+        .pull-left {
+            i.zmdi {
+                padding-top: 11px;
+            }
+        }
+    }
+
+    .easypiechart {
+        height: 165px;
+        width: 165px;
+        margin-bottom: 22.5px;
+
+        .percent {
+            font-size: 30px;
+            line-height: 30px;
+            margin-top: 56px;
+
+            &::after {
+                font-size: 30px;
+            }
+        }
+    }
+
+    i.zmdi-caret-up, i.zmdi-caret-down {
+        position: relative;
+        top: 2px;
+    }
+}
+
+.sm-data-box-4 {
+    &.with-icon {
+        .data-wrap-left {
+            position: absolute;
+            top: 10px;
+        }
+
+        .data-wrap-right {
+            margin-left: 45px;
+        }
+    }
+}
+
+.lg-progress-box {
+    i {
+        color: #e5e5e5;
+        font-size: 56px;
+    }
+}

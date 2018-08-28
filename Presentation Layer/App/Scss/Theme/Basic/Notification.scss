@@ -1,0 +1,164 @@
+﻿.alert {
+    border-radius: 0;
+    border: none;
+    color: $white;
+
+    i {
+        font-size: 24px;
+    }
+
+    &.alert-success {
+        background: $green;
+    }
+
+    &.alert-info {
+        background: $pink;
+    }
+
+    &.alert-danger {
+        background: $red;
+    }
+
+    &.alert-warning {
+        background: $yellow;
+    }
+
+    &.alert-style-1 {
+        padding-left: 70px;
+        background: $white;
+        position: relative;
+        color: $black;
+        border: 1px solid $light_grey;
+
+        i {
+            height: 100%;
+            left: 0;
+            margin: 0;
+            padding-top: 13px;
+            position: absolute;
+            text-align: center;
+            top: 0;
+            width: 50px;
+            color: $white;
+        }
+
+        &.alert-success {
+            i {
+                color: $green;
+                background: #f7f7f7;
+            }
+        }
+
+        &.alert-info {
+            i {
+                color: $pink;
+                background: #f7f7f7;
+            }
+        }
+
+        &.alert-danger {
+            i {
+                color: $red;
+                background: #f7f7f7;
+            }
+        }
+
+        &.alert-warning {
+            i {
+                color: $yellow;
+                background: #f7f7f7;
+            }
+        }
+    }
+}
+
+.alert-dismissable .close, .alert-dismissible .close {
+    top: 0;
+}
+
+.jq-toast-wrap {
+    width: 300px;
+
+    .jq-toast-single {
+        color: $white;
+        border-radius: 2px;
+        margin: 0;
+        font-family: $font_main;
+        background: $black;
+
+        .jq-toast-loader {
+            border-radius: 2px 2px 0 0;
+            height: 3px;
+        }
+
+        .jq-toast-heading {
+            font-size: 16px;
+        }
+
+        &.jq-has-icon {
+            padding: 13px 10px 13px 15px;
+
+            &:before {
+                position: absolute;
+                font-family: "themify";
+                font-size: 22px;
+                left: 12px;
+                top: 13px;
+            }
+        }
+
+        &.jq-icon-info {
+            background: $pink;
+            padding-left: 50px;
+
+            &:before {
+                content: "\e717";
+            }
+        }
+
+        &.jq-icon-error {
+            background: $red;
+            padding-left: 50px;
+
+            &:before {
+                content: "\e620";
+            }
+        }
+
+        &.jq-icon-success {
+            background: $green;
+            padding-left: 50px;
+
+            &:before {
+                content: "\e64c";
+            }
+        }
+
+        &.jq-icon-warning {
+            background: $yellow;
+            padding-left: 50px;
+
+            &:before {
+                content: "\e6c5";
+            }
+        }
+    }
+}
+
+.bottom-center-fullwidth {
+    .jq-toast-wrap {
+        left: 0;
+        right: 0;
+        width: 100%;
+        bottom: 0 !important;
+    }
+}
+
+.top-center-fullwidth {
+    .jq-toast-wrap {
+        left: 0;
+        right: 0;
+        width: 100%;
+        top: 2px !important;
+    }
+}

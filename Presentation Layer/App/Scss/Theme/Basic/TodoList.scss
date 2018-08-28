@@ -1,0 +1,92 @@
+
+.todo-box-wrap {
+    .add-todo {
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-bottom: 1px solid $light_grey;
+
+        span {
+            text-transform: capitalize;
+            font-size: 16px;
+            width: 33.33%;
+            float: left;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        a {
+            width: 33.33%;
+            float: left;
+            font-size: 18px;
+        }
+    }
+
+    .new-todo {
+        .input-group {
+            width: 100%;
+            display: block;
+
+            input {
+                background: $xtra_lighter_grey;
+                border: medium none;
+                height: 60px;
+                padding-right: 60px;
+            }
+
+            .input-group-btn {
+                position: absolute;
+                right: 22px;
+                top: 20px;
+                z-index: 4;
+
+                .btn {
+                    background: transparent none repeat scroll 0 0;
+                    border: medium none;
+                    padding: 0;
+
+                    &:hover, &:active, &:focus {
+                        background: transparent none repeat scroll 0 0;
+                    }
+
+                    i {
+                        color: rgba(33, 33, 33, 0.2);
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.todo-list {
+    hr {
+        margin: 0;
+    }
+
+    .todo-item {
+        padding: 10px 15px;
+        @iclude transition(.2s ease);
+        cursor: pointer;
+
+        &:hover {
+            background: $xtra_lighter_grey;
+        }
+
+        .checkbox {
+            input[type="checkbox"] {
+                width: 100%;
+            }
+
+            input[type="checkbox"] + label {
+                color: $black;
+                padding-left: 10px;
+            }
+
+            input[type="checkbox"]:checked + label {
+                color: $grey;
+                text-decoration: line-through;
+            }
+        }
+    }
+}

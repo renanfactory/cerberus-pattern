@@ -1,0 +1,23 @@
+﻿.tooltip-inner {
+    border-radius: 0;
+    font-family: $font_main;
+    background: $black;
+}
+
+.tooltip {
+    &.left .tooltip-arrow {
+        border-left-color: $black;
+    }
+
+    &.right .tooltip-arrow {
+        border-right-color: $black;
+    }
+
+    &.top .tooltip-arrow {
+        border-top-color: $black;
+    }
+
+    &.bottom .tooltip-arrow {
+        border-bottom-color: $black;
+    }
+}

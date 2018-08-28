@@ -1,0 +1,57 @@
+﻿.badge {
+    background-color: #DCDCDC;
+    font-weight: 400;
+    padding: 5px 10px;
+    color: $black;
+
+    &.badge-info {
+        background: $pink;
+        color: $white;
+    }
+
+    &.badge-primary {
+        background: $blue;
+        color: $white;
+    }
+
+    &.badge-success {
+        background: $green;
+        color: $white;
+    }
+
+    &.badge-danger {
+        background: $red;
+        color: $white;
+    }
+
+    &.badge-warning {
+        background: $yellow;
+        color: $white;
+    }
+
+    &.transparent-badge {
+        background: transparent;
+        padding-left: 0;
+        padding-right: 0;
+
+        &.badge-info {
+            color: $pink;
+        }
+
+        &.badge-primary {
+            color: $blue;
+        }
+
+        &.badge-success {
+            color: $green;
+        }
+
+        &.badge-danger {
+            color: $red;
+        }
+
+        &.badge-warning {
+            color: $yellow;
+        }
+    }
+}

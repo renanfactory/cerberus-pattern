@@ -1,0 +1,148 @@
+﻿.forcast-days > li {
+    display: inline-block;
+    font-size: 12px;
+    text-align: center;
+    width: 14.28%;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    span.forcast-high-deg {
+        color: $orange;
+    }
+
+    img {
+        width: 50px;
+        margin: 0 auto;
+    }
+}
+
+.temprature {
+    font-size: 60px;
+    color: $black;
+
+    .unit {
+        display: inline-block;
+        font-size: 14px;
+        padding-top: 10px;
+        vertical-align: top;
+    }
+}
+
+.currently {
+    font-size: 16px;
+    color: $black;
+}
+
+.other-details {
+    border-top: 1px solid $light_grey;
+    border-bottom: 1px solid $light_grey;
+    margin: 15px -15px;
+    padding: 15px;
+
+    li {
+        display: table;
+        width: 100%;
+
+        span {
+            display: table-cell;
+            padding-bottom: 5px;
+            padding-top: 5px;
+            text-transform: capitalize;
+            width: 25%;
+
+            &:nth-child(2), &:nth-child(4) {
+                color: $black;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+
+.left-block-wrap, .right-block-wrap {
+    min-height: 175px;
+}
+
+.right-block-wrap {
+    text-align: center;
+
+    .right-block {
+        .temprature-icon img {
+            width: 80px;
+        }
+    }
+}
+
+.left-block-wrap {
+    .left-block {
+        .temprature {
+            font-size: 40px;
+        }
+    }
+}
+
+.weather-inverse {
+    .panel-body {
+        background: #f7f7f9;
+    }
+
+    .left-block-wrap {
+        background: $white;
+    }
+}
+
+.weather-info {
+    .left-block-wrap {
+        background: $pink;
+        color: $white !important;
+
+        h5, .temprature {
+            color: $white !important;
+        }
+    }
+}
+
+.weather-warning {
+    .left-block-wrap {
+        background: $yellow;
+        color: $white !important;
+
+        h5, .temprature {
+            color: $white !important;
+        }
+    }
+}
+
+.weather-danger {
+    .left-block-wrap {
+        background: $red;
+        color: $white !important;
+
+        h5, .temprature {
+            color: $white !important;
+        }
+    }
+}
+
+.weather-success {
+    .left-block-wrap {
+        background: $green;
+        color: $white !important;
+
+        h5, .temprature {
+            color: $white !important;
+        }
+    }
+}
+
+.weather-primary {
+    .left-block-wrap {
+        background: $blue;
+        color: $white !important;
+
+        h5, .temprature {
+            color: $white !important;
+        }
+    }
+}

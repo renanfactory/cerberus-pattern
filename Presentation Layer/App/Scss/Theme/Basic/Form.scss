@@ -1,0 +1,452 @@
+﻿.form-control {
+    border: 1px solid rgba(33, 33, 33, 0.12);
+    border-radius: 0;
+    background-color: $white;
+    box-shadow: none;
+    color: $black;
+    height: 42px;
+
+    &:focus {
+        border-color: rgba(33, 33, 33, 0.3);
+        box-shadow: none;
+        outline: 0 none;
+    }
+
+    &::-webkit-input-placeholder {
+        text-transform: capitalize;
+    }
+
+    &:-moz-placeholder {
+        text-transform: capitalize;
+    }
+
+    &::-moz-placeholder {
+        text-transform: capitalize;
+    }
+
+    &:-ms-input-placeholder {
+        text-transform: capitalize;
+    }
+
+    &.filled-input {
+        background: rgba(247,247,249,1);
+        border: none;
+
+        &:focus {
+            background: rgba(247,247,249,.8);
+        }
+    }
+
+    &.rounded-input {
+        border-radius: 60px;
+    }
+
+    &.rounded-outline-input {
+        background: transparent;
+        border: 1px solid $light_grey;
+    }
+}
+
+.control-label {
+    color: $black;
+}
+
+.input-group-addon {
+    background: $light_grey;
+    border-color: rgba(33, 33, 33, 0.12);
+    border-radius: 0;
+    color: $black;
+    min-width: 42px;
+
+    &.btn {
+        color: $white;
+    }
+}
+
+.form-inline .checkbox label, .form-inline .radio label {
+    padding-left: 3px;
+}
+
+.control-label {
+    text-transform: capitalize;
+}
+
+.checkbox, .radio {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    min-height: 27px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.form-inline {
+    .checkbox, .radio {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}
+
+.form-control-feedback {
+    line-height: 42px;
+    height: 42px;
+}
+
+.help-block {
+    color: $grey;
+}
+
+.has-success .form-control {
+    border-color: rgba(34,175,71,.5);
+
+    &:focus {
+        border-color: rgba(34,175,71,1);
+    }
+}
+
+.has-warning .form-control {
+    border-color: rgba(255,191,54,.5);
+
+    &:focus {
+        border-color: rgba(255,191,54,1);
+    }
+}
+
+.has-error .form-control {
+    border-color: rgba(248,63,55,.5);
+
+    &:focus {
+        border-color: rgba(248,63,55,1);
+    }
+}
+
+.has-success .checkbox, .has-success
+.checkbox-inline, .has-success .control-label, .has-success .help-block, .has-success .radio, .has-success .radio-inline, .has-success.checkbox label, .has-success.checkbox-inline label, .has-success.radio label, .has-success.radio-inline label {
+    color: $green;
+}
+
+.has-warning .checkbox, .has-warning
+.checkbox-inline, .has-warning .control-label, .has-warning .help-block, .has-warning .radio, .has-warning .radio-inline, .has-warning.checkbox label, .has-warning.checkbox-inline label, .has-warning.radio label, .has-warning.radio-inline label {
+    color: $yellow;
+}
+
+.has-error .checkbox, .has-error
+.checkbox-inline, .has-error .control-label, .has-error .help-block, .has-error .radio, .has-error .radio-inline, .has-error.checkbox label, .has-error.checkbox-inline label, .has-error.radio label, .has-error.radio-inline label {
+    color: $red;
+}
+
+.has-error .input-group-addon {
+    background-color: transparent;
+    color: $red;
+    border-color: rgba(248,63,55,.5);
+}
+
+.has-success .input-group-addon {
+    background-color: transparent;
+    color: $green;
+    border-color: rgba(34,175,71,.5);
+}
+
+.has-success .form-control-feedback {
+    color: $green;
+}
+
+.has-warning .form-control-feedback {
+    color: $yellow;
+}
+
+.has-error .form-control-feedback {
+    color: $red;
+}
+
+div.colorpicker {
+    padding: 0;
+}
+
+.colorpicker {
+    z-index: 10;
+    margin: 0;
+
+    &::before,
+    &::after {
+        display: none;
+    }
+}
+
+.daterangepicker {
+    .input-mini {
+        border-color: $light_grey;
+        border-radius: 0;
+        color: $black;
+
+        &.active {
+            border-color: $light_grey;
+            border-radius: 0;
+            color: $black;
+        }
+
+        &:focus {
+            border-color: $grey;
+            box-shadow: none !important;
+            outline: 0 none;
+        }
+    }
+
+    td {
+        border-radius: 0 !important;
+    }
+}
+
+.daterangepicker td.active, .daterangepicker td.active:hover,
+.bootstrap-datetimepicker-widget table td.active, .bootstrap-datetimepicker-widget table td.active:hover {
+    background: $green;
+}
+
+.bootstrap-datetimepicker-widget table td.day {
+    border-radius: 0;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered,
+.select2-container--default .select2-results__option[aria-selected="true"] {
+    padding-left: 12px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered,
+.select2-container--default .select2-selection--single {
+    @extend .form-control;
+    line-height: 40px;
+}
+
+.select2-selection.select2-selection--multiple {
+    @extend .form-control;
+}
+
+.select2-container--default .select2-selection--single {
+    border: none;
+}
+
+.select2-container--default {
+    width: 100% !important;
+
+    .select2-results__group, .select2-results__options--nested li {
+        padding-left: 12px;
+    }
+
+    &.select2-container--open {
+        .select2-selection__rendered {
+            border-color: $grey;
+        }
+    }
+
+    .select2-selection__arrow {
+        height: 40px !important;
+    }
+}
+
+.select2-container {
+    .select2-selection--multiple {
+        .select2-selection__rendered {
+            padding-left: 12px;
+            line-height: 40px;
+        }
+
+        .select2-search__field {
+            margin-top: 0;
+        }
+    }
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    border-radius: 0;
+    color: $white;
+    padding: 8px 10px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: baseline;
+    white-space: nowrap;
+    background: $green;
+    border: none;
+    line-height: 10px;
+    font-size: 12px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    color: $white;
+}
+
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 100%;
+}
+
+.bootstrap-select {
+    .dropdown-toggle:focus, .dropdown-toggle:active {
+        outline: none !important;
+    }
+
+    .btn {
+        &.dropdown-toggle {
+            box-shadow: none;
+            border: 1px solid rgba(33, 33, 33, 0.12);
+        }
+
+        .filter-option {
+            color: $black;
+        }
+    }
+}
+
+.sm-bootstrap-select {
+    .bootstrap-select {
+        .btn.dropdown-toggle {
+            font-size: 12px;
+            height: 27px;
+            padding: 3px 25px 3px 15px;
+        }
+
+        .dropdown-menu li a span.text {
+            font-size: 12px;
+        }
+    }
+}
+
+.switchery {
+    margin-right: 10px;
+    margin-top: 15px;
+    height: 22px;
+    width: 44px;
+
+    > small {
+        height: 22px;
+        width: 22px;
+    }
+
+    &.switchery-small {
+        height: 15px;
+        width: 30px;
+
+        > small {
+            height: 15px;
+            width: 15px;
+        }
+    }
+
+    &.switchery-large {
+        height: 28px;
+        width: 56px;
+
+        > small {
+            height: 28px;
+            width: 28px;
+        }
+    }
+}
+
+.no-margin-switcher {
+    .switchery {
+        margin-top: 0;
+        margin-right: 0;
+    }
+}
+
+.bootstrap-touchspin .input-group-btn-vertical > .btn {
+    border-radius: 0;
+    padding: 10px;
+
+    i {
+        top: 6px;
+    }
+}
+
+.bootstrap-touchspin {
+    .btn.btn-default.dropdown-toggle {
+        color: $white !important;
+    }
+}
+
+.ms-container .ms-list {
+    border: 1px solid $light_grey;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.ms-container .ms-selectable li.ms-hover, .ms-container .ms-selection li.ms-hover {
+    background: $green;
+}
+
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary, .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-primary {
+    background: $green;
+    border-radius: 0;
+}
+
+.bootstrap-switch {
+    border-radius: 0;
+    border-color: $light_grey;
+    margin-bottom: 5px;
+    box-shadow: none;
+
+    &.bootstrap-switch-focused {
+        border-color: $light_grey;
+        box-shadow: none;
+    }
+}
+
+.bootstrap-tagsinput {
+    border: 1px solid $light_grey;
+    border-radius: 0;
+    box-shadow: none;
+    color: $grey;
+
+    .tag {
+        border-radius: 0;
+        color: white;
+        background: $green;
+    }
+}
+
+.tag {
+    &.label {
+        padding: 8px 10px;
+        margin-bottom: 10px;
+        margin-right: 5px;
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 400;
+    }
+}
+
+.editableform {
+    .editable-buttons {
+        .btn {
+            &.btn-sm {
+                padding: 9px 25px;
+            }
+        }
+    }
+
+    .form-control {
+        &.input-sm {
+            padding: 6px 12px;
+            font-size: 14px;
+        }
+    }
+
+    select.form-control.input-sm {
+        height: 42px;
+        line-height: 1.428;
+    }
+}
+
+.dropify-wrapper {
+    border: 1px solid $light_grey;
+}
+
+.dropzone {
+    border: 1px solid $light_grey;
+    min-height: 200px;
+    background: transparent;
+
+    .dz-preview.dz-image-preview {
+        background: transparent none repeat scroll 0 0;
+    }
+}

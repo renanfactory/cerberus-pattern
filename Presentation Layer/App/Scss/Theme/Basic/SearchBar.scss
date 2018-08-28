@@ -1,0 +1,35 @@
+
+.app-search {
+    margin: 0;
+    position: relative;
+
+    a {
+        color: #4c5667;
+        position: absolute;
+        right: 10px;
+        top: 15px;
+    }
+
+    .form-control, .form-control:focus {
+        background: rgba(255, 255, 255, 0.9) none repeat scroll 0 0;
+        border: medium none;
+        border-radius: 40px;
+        box-shadow: none;
+        color: #4c5667;
+        display: inline-block;
+        font-size: 13px;
+        font-weight: 600;
+        height: 30px;
+        line-height: 30px;
+        margin-top: 10px;
+        padding-left: 20px;
+        padding-right: 40px;
+        @include transition(all 0.4s ease-out 0s);
+        width: 180px;
+
+        &:focus {
+            width: 300px;
+            @extend .form-control;
+        }
+    }
+}

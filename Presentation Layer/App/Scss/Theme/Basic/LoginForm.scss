@@ -1,0 +1,59 @@
+.page-wrapper.auth-page {
+    background: $white;
+}
+
+.sp-header {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.box-layout .sp-header {
+    max-width: 1400px;
+    left: auto;
+    right: auto;
+}
+
+.sp-logo-wrap {
+    padding-top: 19px;
+    padding-left: 15px;
+
+    .brand-img {
+        position: relative;
+        top: 2px;
+        display: none;
+    }
+
+    .brand-text {
+        color: $white;
+        display: inline-block;
+        font-weight: 700;
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+}
+
+.card-view {
+    .sp-logo-wrap .brand-text {
+        color: $black;
+    }
+}
+
+.form-group.pull-right {
+    padding-top: 19px;
+    padding-right: 15px;
+}
+
+.auth-form-wrap {
+    padding: 100px 0;
+}
+
+.auth-form {
+    width: 400px;
+
+    a.txt-danger {
+        &:hover {
+            color: $red;
+        }
+    }
+}

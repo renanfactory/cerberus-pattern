@@ -1,0 +1,35 @@
+﻿.pagination {
+    > li {
+        > a, > span {
+            border-color: $light_grey;
+            border-radius: 0 !important;
+            color: $orange;
+
+            &:hover, &:focus, &:active {
+                border-color: $light_grey;
+                background-color: $light_grey;
+            }
+        }
+
+        &.active {
+            > a, > span {
+                background: $orange;
+                border-color: $light_grey;
+
+                &:hover, &:focus, &:active {
+                    background: $orange;
+                    border-color: $light_grey;
+                }
+            }
+        }
+    }
+}
+
+.pagination > .disabled > a, .pagination > .disabled > a:focus, .pagination > .disabled > a:hover, .pagination > .disabled > span, .pagination > .disabled > span:focus, .pagination > .disabled > span:hover {
+    border-color: $light_grey;
+    color: $orange;
+}
+
+.pagination > li > a:focus, .pagination > li > a:hover, .pagination > li > span:focus, .pagination > li > span:hover {
+    color: $grey;
+}

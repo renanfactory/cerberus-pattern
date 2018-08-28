@@ -1,0 +1,21 @@
+﻿.instagram-lite {
+    > li {
+        display: inline-block;
+        float: left;
+        font-size: 0;
+        height: auto;
+        width: 25%;
+        border: 1px solid $white;
+
+        > a {
+            display: block;
+            width: 100%;
+            height: 100%;
+
+            img {
+                height: auto;
+                width: 100%
+            }
+        }
+    }
+}

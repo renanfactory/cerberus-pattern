@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>@ViewData["Title"] - App</title>
+  <partial name="Partials/_StylesPartial" />
+  @await RenderSectionAsync("Styles", required: false)
+</head>
+<body>
+  <div class="wrapper theme-2-active navbar-top-light">
+    <!-- Top Menu Items -->
+    <partial name="Partials/_TopMenuPartial" />
+    <!-- /Top Menu Items -->
+    <!-- Left Sidebar Menu -->
+    <partial name="Partials/_LeftSidebarMenu" />
+    <!-- /Left Sidebar Menu -->
+    <!-- Right Sidebar Menu -->    
+    <partial name="Partials/_RightSidebarMenu" />
+    <!-- /Right Sidebar Menu -->
+    <!-- Main Content -->
+    <div class="page-wrapper">
+      <div class="container">
+        @await RenderSectionAsync("Breadcrumb", required: false)
+        @RenderBody()
+        <!-- Footer -->
+        <partial name="Partials/_FooterPartial" />
+        <!-- /Footer -->
+      </div>
+    </div>
+    <!-- /Main Content -->
+    </div>
+
+  <partial name="Partials/_ScriptsPartial" />
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
+
+
+@*<div class="row heading-bg">
+  <!-- Breadcrumb -->
+  <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+    <ol class="breadcrumb">
+      <li><a href="index.html">Dashboard</a></li>
+      <li><a href="#"><span>speciality pages</span></a></li>
+      <li class="active"><span>blank page</span></li>
+    </ol>
+  </div>
+  <!-- /Breadcrumb -->
+</div>*@

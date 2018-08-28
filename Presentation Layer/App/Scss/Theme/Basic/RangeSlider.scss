@@ -1,0 +1,34 @@
+﻿.irs-line-mid,
+.irs-line-left,
+.irs-line-right,
+.irs-bar,
+.irs-bar-edge,
+.irs-slider {
+    background: url("~/images/sprite-skin-modern.png");
+}
+
+.irs-slider {
+    background-position: 0 -120px;
+}
+
+.irs-bar {
+    background-position: 0 -60px;
+}
+
+.irs-from, .irs-to, .irs-single {
+    font-size: 10px;
+    padding: 4px 8px;
+    background: $black;
+    border-radius: 4px;
+    border-radius: 0;
+}
+
+.irs-from::after,
+.irs-to::after,
+.irs-single::after {
+    border-color: $black transparent transparent;
+}
+
+.irs-grid-text {
+    font-size: 10px;
+}

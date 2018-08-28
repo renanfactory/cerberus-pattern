@@ -1,0 +1,17 @@
+﻿.fileupload {
+    overflow: hidden;
+    position: relative;
+}
+
+.fileupload input.upload {
+    cursor: pointer;
+    filter: alpha(opacity=0);
+    font-size: 20px;
+    margin: 0;
+    opacity: 0;
+    padding: 0;
+    position: absolute;
+    right: -3px;
+    top: -3px;
+    padding: 5px;
+}

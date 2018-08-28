@@ -1,0 +1,21 @@
+﻿@page
+@model AboutModel
+@{
+  ViewData["Title"] = "About";
+}
+@section Breadcrumb {
+  <div class="row heading-bg">
+    <!-- Breadcrumb -->
+    <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+      <ol class="breadcrumb">
+        <li class="active"><span>@ViewData["Title"]</span></li>
+      </ol>
+    </div>
+    <!-- /Breadcrumb -->
+  </div>
+}
+
+<h2>@ViewData["Title"]</h2>
+<h3>@Model.Message</h3>
+
+<p>Use this area to provide additional information.</p>

@@ -1,0 +1,29 @@
+.task-panel {
+    a.list-group-item {
+        background-color: transparent;
+        color: $black;
+        border-color: $light_grey;
+        border-image: none;
+        border-radius: 0 !important;
+        border-style: solid none;
+        border-width: 1px medium;
+        border-bottom: none;
+        padding: 15px;
+
+        i {
+            color: $grey;
+            padding-right: 10px;
+            font-size: 18px;
+            width: 25px;
+            line-height: 24px;
+        }
+
+        &:first-child {
+            border-top: none;
+        }
+
+        &:hover {
+            background: $xtra_lighter_grey;
+        }
+    }
+}

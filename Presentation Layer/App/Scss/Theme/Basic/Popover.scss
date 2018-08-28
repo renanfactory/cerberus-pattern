@@ -1,0 +1,22 @@
+﻿.popover {
+    border: medium none;
+    border-radius: 0;
+    padding: 0;
+
+    h3.popover-title {
+        background-color: $green;
+        border-bottom: 1px solid $light_grey;
+        border-radius: 0;
+        font-family: $font_main;
+        color: $white;
+        font-size: 15px;
+    }
+
+    .popover-content {
+        font-family: $font_main;
+    }
+}
+
+.popover.bottom > .arrow::after {
+    border-bottom-color: $green;
+}

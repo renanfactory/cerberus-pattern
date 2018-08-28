@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\CCUT\CCUT.Logging\CCUT.Logging.csproj" />
+    <ProjectReference Include="..\..\CCUT\CCUT.Validations\CCUT.Validations.csproj" />
+    <ProjectReference Include="..\..\DAO\DAO.Ceps\DAO.Ceps.csproj" />
+    <ProjectReference Include="..\..\DAO\DAO\DAO.csproj" />
+    <ProjectReference Include="..\BUS.Entities\BUS.Entities.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,161 @@
+﻿.bootstrap-wysihtml5-insert-image-modal {
+    h3 {
+        font-size: 18px;
+    }
+}
+
+.bootstrap-wysihtml5-insert-link-modal {
+    h3 {
+        font-size: 18px;
+    }
+
+    .checkbox {
+        margin-bottom: inherit;
+        margin-top: inherit;
+        min-height: inherit;
+        padding-bottom: inherit;
+        padding-top: inherit;
+
+        input[type="checkbox"] {
+            opacity: 1;
+        }
+
+        label::before {
+            display: none;
+        }
+    }
+}
+
+ul.wysihtml5-toolbar {
+    a.btn {
+        @extend .btn-outline;
+
+        &.wysihtml5-command-active {
+            box-shadow: none;
+        }
+    }
+}
+
+.mce-container, .mce-container *, .mce-widget, .mce-widget *, .mce-reset {
+    font-family: $font_main !important;
+}
+
+.mce-ico {
+    font-family: "tinymce",Arial !important;
+}
+
+.mce-floatpanel {
+    .mce-textbox, .mce-btn {
+        @extend .form-control;
+    }
+
+    .mce-btn {
+        background: transparent;
+
+        &:hover {
+            background: transparent;
+        }
+    }
+
+    .mce-btn {
+        &.mce-active {
+            background-color: transparent !important;
+
+            &:hover {
+                background-color: transparent;
+                border-color: $light_grey;
+            }
+        }
+    }
+
+    .mce-window-body .mce-listbox {
+        border-color: $light_grey;
+    }
+
+    .mce-window-head .mce-title {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .mce-primary button {
+        background: rgba(34,175,71,1);
+        border: solid 2px rgba(34,175,71,1);
+
+        &:hover, &:active, &:focus {
+            background: rgba(34,175,71,.85);
+            border: solid 2px rgba(34,175,71,.1);
+        }
+    }
+
+    .mce-menu-item-normal.mce-active {
+        background-color: $green;
+    }
+
+    .mce-menu-item:hover, .mce-menu-item.mce-selected, .mce-menu-item:focus {
+        background-color: $green;
+    }
+}
+
+.mce-foot button {
+    background: rgba(248,63,55,1);
+    color: $white !important;
+    border: solid 2px rgba(248,63,55,1);
+
+    &:hover, &:active, &:focus {
+        background: rgba(248,63,55,.85);
+        border: solid 2px rgba(248,63,55,.1);
+    }
+}
+
+.mce-panel {
+    border-color: $light_grey !important;
+}
+
+.btn-group.open .note-btn.dropdown-toggle {
+    box-shadow: none;
+}
+
+.note-editor {
+    &.panel {
+        border-radius: 0;
+        box-shadow: none;
+
+        .panel-heading {
+            background: transparent;
+        }
+    }
+
+    .checkbox {
+        margin-bottom: inherit;
+        margin-top: inherit;
+        min-height: inherit;
+        padding-bottom: inherit;
+        padding-top: inherit;
+
+        input[type="checkbox"] {
+            opacity: 1;
+        }
+
+        label::before {
+            display: none;
+        }
+    }
+
+    .note-btn.btn-sm {
+        padding: 9px 25px;
+        font-size: 14px;
+        @extend .btn-outline;
+    }
+
+    &.note-frame {
+        border: 1px solid $light_grey;
+    }
+
+    .note-toolbar.panel-heading {
+        border: 1px solid $light_grey;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+}

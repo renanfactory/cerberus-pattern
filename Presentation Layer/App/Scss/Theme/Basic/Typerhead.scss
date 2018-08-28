@@ -1,0 +1,53 @@
+﻿.typeahead,
+.tt-query,
+.tt-hint {
+    width: 396px;
+}
+
+
+.tt-menu {
+    width: 422px;
+    margin: 12px 0;
+    padding: 8px 0;
+    background-color: $white;
+    border: 1px solid $light_grey;
+    -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.tt-suggestion {
+    padding: 3px 20px;
+    border-radius: 0;
+}
+
+.tt-suggestion:hover {
+    cursor: pointer;
+    color: $white;
+    background-color: $green;
+}
+
+.tt-suggestion.tt-cursor {
+    color: $white;
+    background-color: #0097cf;
+}
+
+#custom-templates .empty-message {
+    padding: 5px 10px;
+    text-align: center;
+}
+
+#multiple-datasets .league-name {
+    margin: 0 20px 5px 20px;
+    padding: 3px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+#scrollable-dropdown-menu .tt-menu {
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+#rtl-support .tt-menu {
+    text-align: right;
+}

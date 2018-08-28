@@ -1,0 +1,21 @@
+﻿.skill-head {
+    font-size: 10px;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+
+    &.skill-head-inside {
+        line-height: 100px;
+    }
+}
+
+.skill-circle {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    &.skill-circle-fill {
+        background: #f7f7f9;
+        border-radius: 50%;
+    }
+}

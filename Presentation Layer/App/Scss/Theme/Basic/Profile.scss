@@ -1,0 +1,84 @@
+
+.profile-box {
+    .fileupload.btn {
+        background: rgba(33,33,33,.5);
+        border-radius: 0;
+        padding: 3px 10px;
+        border: none;
+
+        &:hover, &:active, &:focus {
+            background: rgba(33,33,33,.5);
+        }
+
+        .btn-text {
+            color: $white;
+            font-size: 13px;
+        }
+    }
+
+    .profile-cover-pic {
+        position: relative;
+        min-height: 197px;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        overflow: hidden;
+        background-size: cover;
+        background-image: url("~/images/gallery/mock6.jpg");
+
+        .profile-image-overlay {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            left: 0;
+            top: 0;
+            background: $black;
+            opacity: .1;
+        }
+
+        .fileupload.btn {
+            position: relative;
+            float: right;
+            z-index: 1;
+        }
+    }
+
+    .profile-info {
+        position: relative;
+        z-index: 1;
+
+        .profile-img-wrap {
+            border-radius: 2px;
+            height: 143px;
+            margin: -80px auto 0;
+            padding: 4px;
+            position: relative;
+            width: 143px;
+            background: $white;
+
+            img {
+                width: 135px;
+                height: 135px;
+            }
+
+            .fileupload.btn {
+                position: absolute;
+                right: 4px;
+                bottom: 4px;
+            }
+        }
+    }
+
+    .social-info {
+        border-top: 1px solid $xtra_lighter_grey;
+        padding: 15px;
+        color: $black;
+
+        .counts {
+            font-size: 21px;
+        }
+
+        .counts-text {
+            color: $grey;
+        }
+    }
+}

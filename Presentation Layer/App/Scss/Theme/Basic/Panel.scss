@@ -1,0 +1,138 @@
+﻿.panel-title {
+    @extend h6;
+
+    > small {
+        color: $grey;
+        font-size: 14px;
+    }
+}
+
+.panel {
+    .panel-heading {
+        a {
+            position: relative;
+
+            i {
+                @include transition(opacity .3s ease);
+
+                &.zmdi-chevron-down {
+                    opacity: 1;
+                    position: absolute;
+                    top: 1px;
+                }
+
+                &.zmdi-chevron-up {
+                    opacity: 0;
+                }
+            }
+
+            &.collapsed {
+                i {
+                    &.zmdi-chevron-down {
+                        opacity: 0;
+                    }
+
+                    &.zmdi-chevron-up {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        .pull-right {
+            i {
+                font-size: 20px;
+                color: $grey;
+            }
+
+            .dropdown {
+                i {
+                    font-size: 16px;
+
+                    &.caret-down {
+                        position: static;
+                        margin-left: 2px
+                    }
+                }
+            }
+
+            &.right-float-sub-text {
+                font-size: 11px;
+                padding-top: 2px;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .panel-footer {
+        background-color: transparent;
+        border-top: 1px solid $light_grey;
+        margin: 0 -15px;
+        padding: 5px 20px 0;
+    }
+
+    &.panel-refresh {
+        position: relative;
+
+        .refresh-container {
+            background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
+            border-radius: 6px;
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            display: none;
+            z-index: 5;
+            cursor: wait;
+            overflow: hidden;
+
+            .la-anim-1 {
+                position: absolute;
+
+                &.la-animate {
+                    @include transition(transform 2s ease);
+                }
+            }
+        }
+    }
+}
+
+.panel-info > .panel-heading {
+    background-color: $pink;
+}
+
+.panel-danger > .panel-heading {
+    background-color: $red;
+}
+
+.panel-warning > .panel-heading {
+    background-color: $yellow;
+}
+
+.panel-success > .panel-heading {
+    background-color: $green;
+}
+
+.panel-primary > .panel-heading {
+    background-color: $blue;
+}
+
+.panel-inverse > .panel-heading {
+    background-color: $light_grey;
+    color: $black !important;
+}
+
+.well {
+    border-radius: 0;
+    box-shadow: none;
+    padding: 20px;
+
+    &.well-lg {
+        padding: 25px;
+    }
+
+    &.well-sm {
+        padding: 15px;
+    }
+}

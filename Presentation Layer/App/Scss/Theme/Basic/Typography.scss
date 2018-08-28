@@ -1,0 +1,49 @@
+﻿address {
+    .address-head {
+        font-size: 15px;
+        color: $black;
+        display: block;
+    }
+}
+
+.mark, mark {
+    padding: 3px;
+    background-color: $red;
+    color: $white;
+}
+
+blockquote {
+    padding: 15px 20px;
+    margin: 0 0 20px;
+    font-size: 16px;
+    border-left: 4px solid $red;
+    background: #f7f7f9;
+    color: $black;
+
+    small {
+        font-size: 70%;
+        text-transform: uppercase;
+        padding-top: 15px;
+    }
+}
+
+ul.uo-list {
+    list-style: disc;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+}
+
+.grid-block {
+    [class^="col-"] {
+        padding-bottom: 10px;
+        padding-top: 10px;
+        border: 1px solid $light_grey;
+        border-radius: 0;
+        box-shadow: none;
+        color: $grey;
+        height: 42px;
+    }
+}	

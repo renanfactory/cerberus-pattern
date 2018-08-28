@@ -1,0 +1,32 @@
+
+.followers-list-wrap {
+    .follo-body {
+        .follo-data {
+            padding: 10px 15px;
+            border-bottom: 1px solid $light_grey;
+            display: block;
+            @include transition(.2s ease);
+
+            .user-img {
+                height: 35px;
+                width: 35px;
+                float: left;
+                margin-right: 15px;
+            }
+
+            .user-data {
+                float: left;
+
+                .name {
+                    color: $black;
+                }
+
+                .time {
+                    font-size: 12px;
+                    margin-top: 2px;
+                    width: 165px;
+                }
+            }
+        }
+    }
+}

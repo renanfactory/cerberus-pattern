@@ -1,0 +1,89 @@
+﻿@charset "UTF-8";
+/*------------------------------------------------------------------
+[Master Stylesheet]
+Project:	Cerberus-pattern
+Author:	Renan Marcel Paulino Leite <renannn@outlook.com>
+++++ Imports ++++
+++++ Reset ++++
+++++ Basic ++++
+	++Effect 1: YouTube loading++
+	++typography++
+	++Buttons++
+	++Admin Basic++
+	++Form++
+	++Form-Wizard++
+	++Product Deatails*++
+	++Product Cart++	
+	++Popover++
+	++Typerhead++
+	++Editors++
+	++Accordion++
+	++Tabs++
+	++Table++
+	++Morris Chart++
+	++Flot Chart++
+	++Chartist++
+	++Easy pie chart++
+	++Skills Counter++
+	++Nestable++
+	++Treeview++
+	++Modals++
+	++sweet-alert++
+	++Notification++
+	++Tooltop++
+	++Icons++
+	++File Upload++
+	++File Manager++
+	++Carousel++
+	++Testimonial slider++
+	++Twitter slider++
+	++Range Slider++
+	++Gallery++
+	++Typography++
+	++Panel++
+	++Pricing Table++
+	++Dropdown++
+	++Weather++
+	++Sparkline++
+	++Pagination++
+	++Pager++
+	++Labels++
+	++Badge++
+	++Task Panel++
+	++Vecotor Map++
+	++Progressbar++
+	++Search Bar++
+	++Chat UI++	
+	++Widgets++
+	++Profile++
+	++Followers++
+	++Small Graph++
+	++Timeline++
+	++Caledar++
+	++Todo List++
+	++Activity++  
+	++Message Box++
+	++Inbox++
+	++Contact Cards++
+	++Contact List++
+	++Login Form++
+	++Error Page++
+	++Products++
+	++Cropperjs++
+++++ Mediaqueries ++++
+-------------------------------------------------------------------*/
+@import "../node_modules/bourbon/core/_bourbon.scss";	
+@import "mixins.scss";
+@import "variables.scss";
+/****************************/
+/** Reset **/
+/****************************/
+@import "Theme/Reset.scss";
+/****************************/
+/** Basic **/
+/****************************/
+@import "Theme/Basic.scss";
+/****************************/
+/** Mediaqueries **/
+/****************************/
+@import "Theme/Mediaqueries.scss";

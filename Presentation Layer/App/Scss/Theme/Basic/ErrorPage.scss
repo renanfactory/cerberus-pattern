@@ -1,0 +1,20 @@
+.error-page {
+    .brand-text {
+        color: $black;
+    }
+}
+
+.error-head {
+    font-size: 112px;
+    font-style: italic;
+    line-height: 112px;
+}
+
+.error-bg-img {
+    background: url("~/images/errorbg.jpg");
+    background-size: cover;
+}
+
+.error-comment {
+    @extend h3;
+}

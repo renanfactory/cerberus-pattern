@@ -1,0 +1,84 @@
+﻿.carousel-control {
+    &.left, &.right {
+        background: none;
+        text-shadow: none;
+    }
+
+    &:hover {
+        &.left, &.right {
+            background: none;
+            text-shadow: none;
+        }
+    }
+
+    span {
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        z-index: 5;
+    }
+}
+
+.carousel-indicators {
+    z-index: 1;
+
+    li {
+        border-color: $orange;
+        background: $orange;
+        opacity: .6;
+
+        &:hover {
+            background: $white;
+        }
+    }
+
+    li, li.active {
+        height: 8px;
+        width: 8px;
+        border-radius: 100%;
+        border: none;
+    }
+
+    li.active {
+        margin: 1px;
+        opacity: 1;
+    }
+}
+
+.text-slider {
+    .carousel-indicators {
+        li {
+            border: none;
+
+            &:hover {
+                background: $orange;
+                opacity: 1;
+            }
+        }
+
+        li.active {
+            border: none;
+            background: $orange;
+        }
+    }
+}
+
+.owl-theme .owl-nav [class*="owl-"] {
+    @extend .btn;
+    @extend .btn-default;
+    @extend .btn-xs;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    height: 8px;
+    margin: 5px 3px;
+    width: 8px;
+    background: $orange;
+    opacity: .6;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    opacity: 1;
+    background: $orange;
+}

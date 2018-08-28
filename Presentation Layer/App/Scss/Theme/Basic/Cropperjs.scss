@@ -1,0 +1,131 @@
+.img-container, .img-preview {
+    background-color: #f7f7f7;
+    width: 100%;
+    text-align: center;
+}
+
+.img-container {
+    min-height: 200px;
+    max-height: 469px;
+    margin-bottom: 16px;
+
+    > img {
+        max-width: 100%;
+    }
+}
+
+.docs-preview {
+    margin-right: -16px;
+}
+
+.img-preview {
+    float: left;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    overflow: hidden;
+
+    > img {
+        max-width: 100%;
+    }
+}
+
+.preview-lg {
+    width: 255px;
+    height: 143px;
+}
+
+.preview-md {
+    width: 128px;
+    height: 72px;
+}
+
+.preview-sm {
+    width: 72px;
+    height: 41px;
+}
+
+.preview-xs {
+    width: 40px;
+    height: 24px;
+    margin-right: 0;
+}
+
+.docs-data > .input-group {
+    margin-bottom: 8px;
+
+    > {
+        label {
+            min-width: 80px;
+        }
+
+        span {
+            min-width: 50px;
+        }
+    }
+}
+
+.docs-buttons > {
+    .btn, .btn-group, .form-control {
+        margin-right: 4px;
+        margin-bottom: 8px;
+    }
+}
+
+.docs-toggles > {
+    .btn, .btn-group, .dropdown {
+        margin-bottom: 8px;
+    }
+}
+
+.docs-tooltip {
+    display: block;
+    margin: -8px -12px;
+    padding: 8px 12px;
+}
+
+.docs-aspect-ratios, .docs-view-modes {
+    width: 100%;
+}
+
+.docs-aspect-ratios > .btn {
+    width: 20%;
+}
+
+.docs-view-modes > .btn {
+    width: 25%;
+}
+
+.docs-options .dropdown-menu {
+    width: 100%;
+
+    > li {
+        padding: 4px 16px;
+
+        &:hover {
+            background-color: #f7f7f7;
+        }
+
+        > label {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.docs-cropped .modal-body {
+    text-align: center;
+
+    > {
+        img, canvas {
+            max-width: 100%;
+        }
+    }
+}
+
+.common-credits > li {
+    display: block;
+    margin-bottom: 15px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

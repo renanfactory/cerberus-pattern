@@ -1,0 +1,53 @@
+﻿.label {
+    padding: 3px 6px 3px;
+    font-size: 11px;
+    border-radius: 50px;
+    text-transform: capitalize;
+    font-weight: 400;
+
+    &.label-info {
+        background: $pink;
+    }
+
+    &.label-primary {
+        background: $blue;
+    }
+
+    &.label-success {
+        background: $green;
+    }
+
+    &.label-danger {
+        background: $red;
+    }
+
+    &.label-warning {
+        background: $yellow;
+    }
+
+    &.label-outline {
+        background: transparent;
+        color: $grey;
+        border: 1px solid;
+
+        &.label-info {
+            border-color: $pink;
+        }
+
+        &.label-primary {
+            border-color: $blue;
+        }
+
+        &.label-success {
+            border-color: $green;
+        }
+
+        &.label-danger {
+            border-color: $red;
+        }
+
+        &.label-warning {
+            border-color: $yellow;
+        }
+    }
+}

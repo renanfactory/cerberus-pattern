@@ -1,0 +1,924 @@
+﻿.btn {
+    color: $white;
+    padding: 10px 25px;
+    text-transform: capitalize;
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    @include transition(all .3s ease);
+
+    i {
+        font-size: 14px;
+    }
+
+    &:focus, &:active {
+        outline: none;
+
+        &:focus, &:active {
+            outline: none;
+        }
+    }
+
+    &.btn-default {
+        background: rgba(220,220,220,1);
+        border: solid 1px rgba(220,220,220,1);
+        color: $black !important;
+
+        &:hover, &:active, &:focus {
+            background: rgba(220,220,220,.85);
+            border: solid 1px rgba(220,220,220,.1);
+        }
+    }
+
+    &.btn-dark {
+        background: rgba(39,43,52,1);
+        border: solid 1px rgba(39,43,52,1);
+
+        &:hover, &:active, &:focus {
+            background: rgba(39,43,52,.85);
+            border: solid 1px rgba(39,43,52,.1);
+            color: $white;
+        }
+    }
+
+    &.btn-orange {
+        background: rgba(255,96,40,1);
+        border: solid 1px rgba(255,96,40,1);
+
+        &:hover, &:active, &:focus {
+            background: rgba(255,96,40,.85);
+            border: solid 1px rgba(255,96,40,.1);
+            color: $white;
+        }
+    }
+
+    &.btn-orange-light-1 {
+        background: rgba(255,147,109,1);
+        border: solid 1px rgba(255,147,109,1);
+
+        &:hover, &:active, &:focus {
+            background: rgba(255,147,109,.85);
+            border: solid 1px rgba(255,147,109,.1);
+            color: $white;
+        }
+    }
+
+    &.btn-orange-light-2 {
+        background: rgba(255,175,147,1);
+        border: solid 1px rgba(255,175,147,1);
+
+        &:hover, &:active, &:focus {
+            background: rgba(255,175,147,.85);
+            border: solid 1px rgba(255,175,147,.1);
+            color: $white;
+        }
+    }
+
+    &.btn-orange-dark {
+        background: rgba(251,85,28,1);
+        border: solid 1px rgba(251,85,28,1);
+
+        &:hover, &:active, &:focus {
+            background: rgba(251,85,28,.85);
+            border: solid 1px rgba(251,85,28,.1);
+            color: $white;
+        }
+    }
+
+    &.btn-info {
+        background: rgba(237,27,96,1);
+        border: solid 1px rgba(237,27,96,1);
+
+        &:hover, &:active, &:focus {
+            background: rgba(237,27,96,.85);
+            border: solid 1px rgba(237,27,96,.1);
+        }
+    }
+
+    &.btn-primary {
+        background: rgba(0,146,238,1);
+        border: solid 1px rgba(0,146,238,1);
+
+        &:hover, &:active, &:focus {
+            background: rgba(0,146,238,.85);
+            border: solid 1px rgba(0,146,238,.1);
+        }
+    }
+
+    &.btn-success {
+        background: rgba(34,175,71,1);
+        border: solid 1px rgba(34,175,71,1);
+
+        &:hover, &:active, &:focus {
+            background: rgba(34,175,71,.85);
+            border: solid 1px rgba(34,175,71,.1);
+        }
+    }
+
+    &.btn-danger {
+        background: rgba(248,63,55,1);
+        border: solid 1px rgba(248,63,55,1);
+
+        &:hover, &:active, &:focus {
+            background: rgba(248,63,55,.85);
+            border: solid 1px rgba(248,63,55,.1);
+        }
+    }
+
+    &.btn-warning {
+        background: rgba(255,191,54,1);
+        border: solid 1px rgba(255,191,54,1);
+
+        &:hover, &:active, &:focus {
+            background: rgba(255,191,54,.85);
+            border: solid 1px rgba(255,191,54,.1);
+        }
+    }
+
+    &.btn-white {
+        background: rgba(255,255,255,1);
+        color: rgb(86,211,101) !important;
+
+        &:hover {
+            background: rgba(255,255,255,.85);
+            border: solid 1px rgba(255,255,255,.1);
+        }
+    }
+
+    &.btn-outline {
+        background: transparent !important;
+
+        &:hover, &:focus, &:active {
+            background: transparent !important;
+            border: solid 1px rgba(255,255,255,1);
+        }
+
+        &.btn-default {
+            border: solid 1px rgba(220,220,220,.5);
+            color: $black;
+
+            &:hover, &:focus, &:active {
+                border: solid 1px rgba(220,220,220,1);
+            }
+        }
+
+        &.btn-dark {
+            border: solid 1px rgba(39,43,52,.5);
+            color: $black;
+
+            &:hover, &:active, &:focus {
+                border: solid 1px rgb.5(39,43,52,1);
+            }
+        }
+
+        &.btn-orange {
+            border: solid 1px rgba(255,96,40,.5);
+            color: $orange;
+
+            &:hover, &:active, &:focus {
+                border: solid 1px rgba(255,96,40,1);
+                color: $orange;
+            }
+        }
+
+        &.btn-orange-light-1 {
+            border: solid 1px rgba(255,147,109,.5);
+            color: $orange_light_1;
+
+            &:hover, &:active, &:focus {
+                border: solid 1px rgba(255,147,109,1);
+                color: $orange_light_1;
+            }
+        }
+
+        &.btn-orange-light-2 {
+            border: solid 1px rgba(255,175,147,.85);
+            color: $orange_light_2;
+
+            &:hover, &:active, &:focus {
+                border: solid 1px rgba(255,175,147,1);
+                color: $orange_light_2;
+            }
+        }
+
+        &.btn-orange-dark {
+            border: solid 1px rgba(251,85,28,.85);
+            color: $orange_dark_1;
+
+            &:hover, &:active, &:focus {
+                border: solid 1px rgba(251,85,28,1);
+                color: $orange_dark_1;
+            }
+        }
+
+        &.btn-info {
+            border: solid 1px rgba(237,27,96,.5);
+            color: $pink;
+
+            &:hover, &:focus, &:active {
+                border: solid 1px rgba(237,27,96,1);
+            }
+        }
+
+        &.btn-primary {
+            border: solid 1px rgba(0,146,238,.5);
+            color: $blue;
+
+            &:hover, &:focus, &:active {
+                border: solid 1px rgba(0,146,238,1);
+            }
+        }
+
+        &.btn-success {
+            border: solid 1px rgba(34,175,71,.5);
+            color: $green;
+
+            &:hover, &:focus, &:active {
+                border: solid 1px rgba(34,175,71,1);
+            }
+        }
+
+        &.btn-danger {
+            border: solid 1px rgba(248,63,55,.5);
+            color: $red;
+
+            &:hover, &:focus, &:active {
+                border: solid 1px rgba(248,63,55,1);
+            }
+        }
+
+        &.btn-warning {
+            border: solid 1px rgba(255,191,54,.5);
+            color: $yellow;
+
+            &:hover, &:focus, &:active {
+                border: solid 1px rgba(255,191,54,1);
+            }
+        }
+
+        &.btn-outline-white {
+            border: solid 1px rgba(255,255,255,.5);
+            color: rgb(255,255,255) !important;
+
+            &:hover {
+                border: solid 1px rgba(255,255,255,1);
+            }
+        }
+    }
+
+    &.btn-rounded {
+        border-radius: 60px;
+    }
+
+    &.btn-lg {
+        padding: 12px 25px;
+    }
+
+    &.btn-sm {
+        padding: 8px 25px;
+    }
+
+    &.btn-xs {
+        padding: 4px 25px;
+    }
+
+    &.btn-icon {
+        i {
+            padding-right: 6px;
+            font-size: 14px;
+        }
+
+        &.right-icon {
+            i {
+                padding-left: 6px;
+            }
+        }
+
+        &.left-icon {
+            i {
+                padding-right: 6px;
+            }
+        }
+    }
+
+    &.btn-lable-wrap {
+        position: relative;
+
+        .btn-label {
+            background: rgba(0, 0, 0, 0.05) none repeat scroll 0 0;
+            padding: 11px 15px;
+            position: absolute;
+            top: -2px;
+
+            i {
+                font-size: 14px;
+            }
+        }
+
+        &.left-label {
+            .btn-label {
+                left: -2px;
+            }
+
+            .btn-text {
+                margin-left: 35px;
+            }
+        }
+
+        &.right-label {
+            .btn-label {
+                right: -2px;
+            }
+
+            .btn-text {
+                margin-right: 35px;
+            }
+        }
+    }
+
+    &.btn-rounded {
+        &.left-label {
+            .btn-label {
+                border-bottom-right-radius: 60px;
+                border-top-left-radius: 60px;
+            }
+        }
+
+        &.right-label {
+            .btn-label {
+                border-bottom-right-radius: 60px;
+                border-top-right-radius: 60px;
+            }
+        }
+    }
+
+    &.btn-outline {
+        &.btn-lable-wrap {
+            .btn-label {
+                background: transparent;
+            }
+        }
+    }
+
+    &.btn-anim {
+        position: relative;
+        overflow: hidden;
+
+        i {
+            font-size: 16px;
+            height: 100%;
+            left: 0;
+            padding-top: 10px;
+            position: absolute;
+            top: -100%;
+            @include transition(all 0.3s ease 0s);
+            width: 100%;
+        }
+
+        .btn-text {
+            position: relative;
+            top: 0;
+            @include transition(all 0.3s ease 0s);
+        }
+
+        &:hover {
+            i {
+                top: 0;
+            }
+
+            .btn-text {
+                top: 50px;
+            }
+        }
+    }
+
+    &.btn-icon-anim {
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        border: none;
+        padding: 11px;
+        background: transparent;
+
+        &:hover, &:focus, &:active {
+            background: transparent;
+            border: none;
+        }
+
+        i {
+            font-size: 16px;
+        }
+
+        &:before {
+            content: "";
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            @include transition(color 0.3s ease 0s,box-shadow 0.3s ease 0s, transform 0.3s ease 0s);
+            width: 100%;
+            z-index: -1;
+        }
+
+        &.btn-default {
+            &:before {
+                box-shadow: 0 0 0 35px rgb(220,220,220) inset;
+            }
+
+            &:hover {
+                color: $black !important;
+
+                &:before {
+                    box-shadow: 0 0 0 1px rgb(220,220,220) inset;
+                }
+            }
+        }
+
+        &.btn-info {
+            &:before {
+                box-shadow: 0 0 0 35px $pink inset;
+            }
+
+            &:hover {
+                color: $pink !important;
+
+                &:before {
+                    box-shadow: 0 0 0 1px $pink inset;
+                }
+            }
+        }
+
+        &.btn-primary {
+            &:before {
+                box-shadow: 0 0 0 35px $blue inset;
+            }
+
+            &:hover {
+                color: $blue !important;
+
+                &:before {
+                    box-shadow: 0 0 0 1px $blue inset;
+                }
+            }
+        }
+
+        &.btn-success {
+            &:before {
+                box-shadow: 0 0 0 35px $green inset;
+            }
+
+            &:hover {
+                color: $green !important;
+
+                &:before {
+                    box-shadow: 0 0 0 1px $green inset;
+                }
+            }
+        }
+
+        &.btn-danger {
+            &:before {
+                box-shadow: 0 0 0 35px $red inset;
+            }
+
+            &:hover {
+                color: $red !important;
+
+                &:before {
+                    box-shadow: 0 0 0 1px $red inset;
+                }
+            }
+        }
+
+        &.btn-warning {
+            &:before {
+                box-shadow: 0 0 0 35px $yellow inset;
+            }
+
+            &:hover {
+                color: $yellow !important;
+
+                &:before {
+                    box-shadow: 0 0 0 1px $yellow inset;
+                }
+            }
+        }
+
+        &.btn-facebook {
+            &:before {
+                box-shadow: 0 0 0 35px rgb(59,89,152) inset;
+            }
+
+            &:hover {
+                color: rgb(59,89,152) !important;
+
+                &:before {
+                    box-shadow: 0 0 0 1px rgb(59,89,152) inset;
+                }
+            }
+        }
+
+        &.btn-twitter {
+            &:before {
+                box-shadow: 0 0 0 35px rgb(85,172,238) inset;
+            }
+
+            &:hover {
+                color: rgb(85,172,238) !important;
+
+                &:before {
+                    box-shadow: 0 0 0 1px rgb(85,172,238) inset;
+                }
+            }
+        }
+
+        &.btn-linkedin {
+            &:before {
+                box-shadow: 0 0 0 35px rgb(0,123,182) inset;
+            }
+
+            &:hover {
+                color: rgb(0,123,182) !important;
+
+                &:before {
+                    box-shadow: 0 0 0 1px rgb(0,123,182) inset;
+                }
+            }
+        }
+
+        &.btn-dribbble {
+            &:before {
+                box-shadow: 0 0 0 35px rgb(234,76,137) inset;
+            }
+
+            &:hover {
+                color: rgb(234,76,137) !important;
+
+                &:before {
+                    box-shadow: 0 0 0 1px rgb(234,76,137) inset;
+                }
+            }
+        }
+
+        &.btn-googleplus {
+            &:before {
+                box-shadow: 0 0 0 35px rgb(221,75,57) inset;
+            }
+
+            &:hover {
+                color: rgb(221,75,57) !important;
+
+                &:before {
+                    box-shadow: 0 0 0 1px rgb(221,75,57) inset;
+                }
+            }
+        }
+
+        &.btn-instagram {
+            &:before {
+                box-shadow: 0 0 0 35px rgb(63,114,155) inset;
+            }
+
+            &:hover {
+                color: rgb(63,114,155) !important;
+
+                &:before {
+                    box-shadow: 0 0 0 1px rgb(63,114,155) inset;
+                }
+            }
+        }
+
+        &.btn-pinterest {
+            &:before {
+                box-shadow: 0 0 0 35px rgb(203,32,39) inset;
+            }
+
+            &:hover {
+                color: rgb(203,32,39) !important;
+
+                &:before {
+                    box-shadow: 0 0 0 1px rgb(203,32,39) inset;
+                }
+            }
+        }
+
+        &.btn-dropbox {
+            &:before {
+                box-shadow: 0 0 0 35px rgb(0,126,229) inset;
+            }
+
+            &:hover {
+                color: rgb(0,126,229) !important;
+
+                &:before {
+                    box-shadow: 0 0 0 1px rgb(0,126,229) inset;
+                }
+            }
+        }
+
+        &.btn-flickr {
+            &:before {
+                box-shadow: 0 0 0 35px rgb(255,0,132) inset;
+            }
+
+            &:hover {
+                color: rgb(255,0,132) !important;
+
+                &:before {
+                    box-shadow: 0 0 0 1px rgb(255,0,132) inset;
+                }
+            }
+        }
+
+        &.btn-tumblr {
+            &:before {
+                box-shadow: 0 0 0 35px rgb(50,80,109) inset;
+            }
+
+            &:hover {
+                color: rgb(50,80,109) !important;
+
+                &:before {
+                    box-shadow: 0 0 0 1px rgb(50,80,109) inset;
+                }
+            }
+        }
+
+        &.btn-skype {
+            &:before {
+                box-shadow: 0 0 0 35px rgb(0,175,240) inset;
+            }
+
+            &:hover {
+                color: rgb(0,175,240) !important;
+
+                &:before {
+                    box-shadow: 0 0 0 1px rgb(0,175,240) inset;
+                }
+            }
+        }
+
+        &.btn-youtube {
+            &:before {
+                box-shadow: 0 0 0 35px rgb(187,0,0) inset;
+            }
+
+            &:hover {
+                color: rgb(187,0,0) !important;
+
+                &:before {
+                    box-shadow: 0 0 0 1px rgb(187,0,0) inset;
+                }
+            }
+        }
+
+        &.btn-github {
+            &:before {
+                box-shadow: 0 0 0 35px rgb(23,21,21) inset;
+            }
+
+            &:hover {
+                color: rgb(23,21,21) !important;
+
+                &:before {
+                    box-shadow: 0 0 0 1px rgb(23,21,21) inset;
+                }
+            }
+        }
+    }
+
+    &.btn-square {
+        height: 42px;
+        width: 42px;
+        padding: 0;
+
+        &.btn-lg {
+            height: 48px;
+            width: 48px;
+        }
+
+        &.btn-sm {
+            height: 35px;
+            width: 35px;
+            padding: 6px !important;
+        }
+    }
+
+    &.btn-circle {
+        height: 40px;
+        width: 40px;
+        padding: 0;
+        border-radius: 50%;
+
+        &:before {
+            border-radius: 50%;
+        }
+
+        &.btn-lg {
+            height: 45px;
+            width: 45px;
+        }
+
+        &.btn-sm {
+            height: 35px;
+            width: 35px;
+            padding: 6px !important;
+        }
+    }
+
+    &.fancy-button {
+        &.btn-default {
+            &.btn-0 {
+                &:before {
+                    background: rgb(220,220,220);
+                }
+            }
+
+            &.btn-0 {
+                &:hover {
+                    color: $black !important;
+                }
+            }
+        }
+
+        &.btn-info {
+            &.btn-0 {
+                &:before {
+                    background: $pink;
+                }
+            }
+
+            &.btn-0 {
+                &:hover {
+                    color: $white !important;
+                }
+            }
+        }
+
+        &.btn-primary {
+            &.btn-0 {
+                &:before {
+                    background: $blue;
+                }
+            }
+
+            &.btn-0 {
+                &:hover {
+                    color: $white !important;
+                }
+            }
+        }
+
+        &.btn-danger {
+            &.btn-0 {
+                &:before {
+                    background: $red;
+                }
+            }
+
+            &.btn-0 {
+                &:hover {
+                    color: $white !important;
+                }
+            }
+        }
+
+        &.btn-success {
+            &.btn-0 {
+                &:before {
+                    background: $green;
+                }
+            }
+
+            &.btn-0 {
+                &:hover {
+                    color: $white !important;
+                }
+            }
+        }
+
+        &.btn-warning {
+            &.btn-0 {
+                &:before {
+                    background: $yellow;
+                }
+            }
+
+            &.btn-0 {
+                &:hover {
+                    color: $white !important;
+                }
+            }
+        }
+    }
+
+    &.fixed-btn {
+        width: 100px;
+    }
+}
+
+.open {
+    .dropdown-toggle.btn {
+        &.btn-default {
+            background: rgba(220,220,220,1);
+            border: solid 1px rgba(220,220,220,1);
+
+            &:hover, &:active, &:focus {
+                background: rgba(220,220,220,.85);
+                border: solid 1px rgba(220,220,220,.1);
+            }
+        }
+
+        &.btn-info {
+            background: rgba(237,27,96,1);
+            border: solid 1px rgba(237,27,96,1);
+
+            &:hover, &:active, &:focus {
+                background: rgba(237,27,96,.85);
+                border: solid 1px rgba(237,27,96,.1);
+            }
+        }
+
+        &.btn-primary {
+            background: rgba(0,146,238,1);
+            border: solid 1px rgba(0,146,238,1);
+
+            &:hover, &:active, &:focus {
+                background: rgba(0,146,238,.85);
+                border: solid 1px rgba(0,146,238,.1);
+            }
+        }
+
+        &.btn-success {
+            background: rgba(34,175,71,1);
+            border: solid 1px rgba(34,175,71,1);
+
+            &:hover, &:active, &:focus {
+                background: rgba(34,175,71,.85);
+                border: solid 1px rgba(34,175,71,.1);
+            }
+        }
+
+        &.btn-danger {
+            background: rgba(248,63,55,1);
+            border: solid 1px rgba(248,63,55,1);
+
+            &:hover, &:active, &:focus {
+                background: rgba(248,63,55,.85);
+                border: solid 1px rgba(248,63,55,.1);
+            }
+        }
+
+        &.btn-warning {
+            background: rgba(255,191,54,1);
+            border: solid 1px rgba(255,191,54,1);
+
+            &:hover, &:active, &:focus {
+                background: rgba(255,191,54,.85);
+                border: solid 1px rgba(255,191,54,.1);
+            }
+        }
+
+        &.btn-outline {
+            background: transparent;
+
+            &:hover, &:active, &:focus {
+                background: transparent;
+                border: solid 1px rgba(220,220,220,1);
+            }
+
+            &.btn-success {
+                color: $green;
+                border: solid 1px $green;
+            }
+
+            &.btn-warning {
+                color: $yellow;
+                border: solid 1px $yellow;
+            }
+
+            &.btn-info {
+                color: $pink;
+                border: solid 1px $pink;
+            }
+
+            &.btn-danger {
+                color: $red;
+                border: solid 1px $red;
+            }
+
+            &.btn-primary {
+                color: $blue;
+                border: solid 1px $blue;
+            }
+        }
+    }
+}
+
+.button-list {
+    .btn {
+        margin-top: 15px;
+        margin-right: 10px;
+    }
+}

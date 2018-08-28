@@ -1,0 +1,126 @@
+.message-box-wrap {
+    .msg-search {
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-bottom: 1px solid $light_grey;
+
+        span {
+            text-transform: capitalize;
+            font-size: 16px;
+            width: 33.33%;
+            float: left;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        a {
+            width: 33.33%;
+            float: left;
+            font-size: 18px;
+        }
+    }
+
+    .message-box-bottom-wrap {
+        .read-all {
+            padding: 5px 15px;
+            font-size: 13px;
+            color: $grey;
+            text-transform: capitalize;
+        }
+    }
+}
+
+.message-box {
+    > a {
+        display: block;
+        border-bottom: 1px solid $light_grey;
+
+        .sl-item {
+            border: none;
+            padding: 10px 15px;
+            margin-left: 0;
+            background: $xtra_lighter_grey;
+            @include transition(.2s ease);
+
+            &:before, &:after {
+                display: none;
+            }
+
+            .sl-avatar {
+                left: auto;
+
+                img {
+                    width: 35px;
+                    height: 35px;
+                }
+            }
+
+            .sl-content {
+                margin-left: 50px;
+
+                .message-time {
+                    color: $grey;
+                }
+
+                .message-subject {
+                    font-size: 13px;
+                }
+
+                > p {
+                    font-size: 13px;
+                    line-height: 16px;
+                }
+            }
+
+            &.unread-message {
+                background: transparent;
+
+                &:hover {
+                    background: $xtra_lighter_grey;
+                }
+
+                .sl-content {
+                    .message-per, .message-subject {
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.review-box {
+    @extend .message-box;
+
+    hr {
+        margin: 0;
+    }
+
+    .per-rating {
+        a {
+            color: $orange;
+            margin-right: 4px;
+            font-size: 17px;
+        }
+
+        span {
+            font-size: 17px;
+            color: $black;
+        }
+    }
+
+    .sl-item {
+        margin-left: 0;
+        border: none;
+        padding: 20px 15px;
+
+        &:before {
+            display: none;
+        }
+
+        .sl-content {
+            margin-left: 0;
+        }
+    }
+}

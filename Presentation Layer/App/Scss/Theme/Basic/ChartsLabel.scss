@@ -1,0 +1,25 @@
+﻿.label-chatrs {
+    .clabels {
+        width: 10px;
+        height: 10px;
+
+        &.clabels-lg {
+            width: 12px;
+            height: 12px;
+        }
+
+        &.circular-clabels {
+            border-radius: 50%;
+        }
+    }
+
+    .clabels-text {
+        span:first-child {
+            line-height: 13px;
+        }
+    }
+
+    i.big-rpsn-icon {
+        font-size: 35px;
+    }
+}

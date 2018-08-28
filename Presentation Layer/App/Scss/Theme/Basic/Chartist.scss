@@ -1,0 +1,63 @@
+﻿.ct-line {
+    stroke-width: 2px;
+}
+
+.ct-point {
+    stroke-width: 7px;
+}
+
+.ct-series-a .ct-bar, .ct-series-a .ct-line, .ct-series-a .ct-point, .ct-series-a .ct-slice-donut {
+    stroke: $orange;
+}
+
+.ct-series-b .ct-bar, .ct-series-b .ct-line, .ct-series-b .ct-point, .ct-series-b .ct-slice-donut {
+    stroke: $orange_light_1;
+}
+
+.ct-series-c .ct-bar, .ct-series-c .ct-line, .ct-series-c .ct-point, .ct-series-c .ct-slice-donut {
+    stroke: $orange_light_2;
+}
+
+.ct-series-d .ct-bar, .ct-series-d .ct-line, .ct-series-d .ct-point, .ct-series-d .ct-slice-donut {
+    stroke: $orange_dark_1;
+}
+
+.ct-series-c .ct-area, .ct-series-c .ct-slice-pie {
+    fill: $orange_light_1;
+}
+
+.ct-series-a .ct-area, .ct-series-a .ct-slice-pie {
+    fill: $orange_light_2;
+}
+
+.ct-series-b .ct-area, .ct-series-b .ct-slice-pie {
+    fill: $orange;
+}
+
+.ct-series-d .ct-area, .ct-series-d .ct-slice-pie {
+    fill: $orange_dark_2;
+}
+
+.ct-area {
+    fill-opacity: 1;
+}
+
+.ct-grid {
+    stroke: $grey;
+    stroke-dasharray: 0;
+    stroke-width: 1px;
+    display: none;
+}
+
+.ct-label {
+    color: $grey;
+    fill: $white;
+}
+
+.ct-chart-bar .ct-label.ct-horizontal.ct-end {
+    color: $grey;
+}
+
+.ct-chart-before-pad-zero:before {
+    padding-bottom: 0;
+}

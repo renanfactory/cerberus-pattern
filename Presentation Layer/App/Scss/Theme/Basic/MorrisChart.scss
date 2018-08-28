@@ -1,0 +1,30 @@
+﻿.morris-chart {
+    width: 100%;
+    margin-bottom: -1px;
+
+    svg {
+        width: 100%;
+    }
+
+    &.donut-chart {
+        svg {
+            path {
+                stroke: transparent;
+            }
+        }
+    }
+}
+
+.morris-hover.morris-default-style {
+    background: rgba(33,33,33,1);
+    border: none;
+    border-radius: 0;
+    color: $black;
+    font-family: $font_main;
+    font-size: 12px;
+
+    .morris-hover-row-label {
+        color: $white;
+        font-weight: 400;
+    }
+}

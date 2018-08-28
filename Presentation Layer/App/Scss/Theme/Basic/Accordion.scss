@@ -1,0 +1,95 @@
+﻿.accordion-struct {
+    &.panel-group {
+        .panel {
+            border: medium none;
+            border-radius: 0;
+            margin-bottom: 0;
+            margin-top: 0;
+            box-shadow: none;
+
+            .panel-heading {
+                border-radius: 0;
+                padding: 0;
+                background: $xtra_lighter_grey;
+                border-bottom: 1px solid $light_grey;
+
+                &.activestate {
+                    background: $orange;
+                    border-bottom: 1px solid $orange;
+
+                    a {
+                        color: $white;
+                    }
+                }
+
+                a {
+                    color: $grey;
+                    text-transform: capitalize;
+                    padding: 10px 20px;
+                    width: 100%;
+                    display: block;
+                }
+            }
+
+            &:last-child {
+                .panel-heading {
+                    border-bottom: none;
+                }
+            }
+
+            .panel-body {
+                border: none;
+            }
+        }
+    }
+
+    &.accordion-style-1 {
+        &.panel-group {
+            .panel {
+                .panel-heading {
+                    background: transparent;
+                    border-bottom: 1px solid $light_grey;
+
+                    &.activestate {
+                        background: transparent;
+
+                        .icon-ac-wrap {
+                            .minus-ac {
+                                opacity: 1;
+                            }
+
+                            .plus-ac {
+                                opacity: 0;
+                            }
+                        }
+
+                        a {
+                            color: $grey;
+                        }
+                    }
+
+                    a {
+                        color: $grey;
+                    }
+                }
+            }
+        }
+
+        .icon-ac-wrap {
+            display: inline;
+            position: relative;
+            color: $orange;
+
+            .minus-ac {
+                position: absolute;
+                left: 0;
+                top: 0;
+                opacity: 0;
+            }
+
+            .plus-ac {
+                opacity: 1;
+            }
+        }
+    }
+}

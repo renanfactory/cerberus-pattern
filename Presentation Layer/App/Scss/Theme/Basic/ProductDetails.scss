@@ -1,0 +1,25 @@
+﻿.item-big {
+    > img {
+        border-radius: 2px;
+    }
+}
+
+.product-detail-wrap {
+    .product-price {
+        font-size: 18px;
+        color: $orange;
+    }
+
+    .bootstrap-touchspin {
+        float: left;
+        margin-right: 15px;
+        width: 70px;
+    }
+}
+
+.product-rating {
+    a {
+        color: $orange;
+        margin-right: 5px;
+    }
+}

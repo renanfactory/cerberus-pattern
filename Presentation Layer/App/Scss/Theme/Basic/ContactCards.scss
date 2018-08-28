@@ -1,0 +1,33 @@
+
+.contact-card {
+    .card-user-img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .panel-heading {
+        .user-detail-wrap {
+            margin-top: 3px;
+
+            .card-user-name {
+                font-size: 16px;
+                text-transform: capitalize;
+                color: $white;
+            }
+
+            .card-user-desn {
+                color: $white;
+                text-transform: capitalize;
+                font-size: 13px;
+            }
+        }
+
+        .pull-right {
+            margin-top: 17px;
+        }
+    }
+
+    .card-user-email, .card-user-phone {
+        color: $grey;
+    }
+}

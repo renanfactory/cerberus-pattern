@@ -1,0 +1,15 @@
+﻿.sweet-alert {
+    border-radius: 0;
+    font-family: inherit;
+
+    h2 {
+        font-weight: 400;
+        color: $black;
+    }
+
+    button {
+        @extend .btn;
+        box-shadow: none;
+        font-size: inherit;
+    }
+}

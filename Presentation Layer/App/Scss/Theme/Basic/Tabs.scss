@@ -1,0 +1,400 @@
+﻿.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+    border: none;
+}
+
+.tab-struct {
+    .tab-pane {
+        padding-top: 15px;
+    }
+
+    &.vertical-tab {
+        .tab-pane {
+            padding-top: 0;
+            padding-left: 15px;
+        }
+    }
+
+    &.vertical-tab-reverse {
+        .tab-pane {
+            padding-left: 0;
+            padding-right: 15px;
+        }
+    }
+}
+
+.pills-struct {
+    .tab-pane {
+        padding-top: 15px;
+    }
+
+    &.vertical-pills {
+        .tab-pane {
+            padding-top: 0;
+            padding-left: 15px;
+        }
+    }
+
+    &.vertical-pills-reverse {
+        .tab-pane {
+            padding-left: 0;
+            padding-right: 15px;
+        }
+    }
+}
+
+.nav-tabs {
+    border-bottom: 1px solid $light_grey;
+
+    > li {
+        margin-right: 5px;
+
+        > a {
+            background: $light_grey;
+            border: none;
+            padding: 10px 20px;
+            color: $grey;
+            margin: 0;
+            border-radius: 0;
+            text-transform: capitalize;
+            @include transition(.2s ease);
+
+            &:active, &:focus, &:hover {
+                background: #f2f2f2;
+                color: $black;
+                border-color: transparent;
+            }
+        }
+
+        &.active, &.open {
+            > a {
+                background: #f2f2f2;
+                color: $black;
+                border-color: transparent;
+
+                &:active, &:focus, &:hover {
+                    background: #f2f2f2;
+                    color: $black;
+                    border-color: transparent;
+                }
+            }
+        }
+
+        &:first-child {
+            > a {
+                border-top-left-radius: 10px;
+            }
+        }
+
+        &:last-child {
+            > a {
+                border-top-right-radius: 10px;
+            }
+
+            margin-right: 0;
+        }
+    }
+}
+
+.nav-tab-reverse {
+    .nav-tabs {
+        > li {
+            float: right;
+            margin-right: 0;
+            margin-left: 5px;
+
+            &:first-child {
+                > a {
+                    border-top-left-radius: 0;
+                    border-top-right-radius: 10px;
+                }
+            }
+
+            &:last-child {
+                > a {
+                    border-top-right-radius: 0;
+                    border-top-left-radius: 10px;
+                }
+
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+.vertical-tab {
+    .tab-content {
+        overflow: hidden;
+        border-left: 1px solid $light_grey;
+    }
+
+    .ver-nav-tab {
+        float: left;
+        border-bottom: none;
+
+        > li {
+            margin-bottom: 5px;
+            margin-right: -1px;
+            float: none;
+
+            > a {
+                border: none;
+            }
+
+            &:first-child {
+                > a {
+                    border-top-left-radius: 10px;
+                }
+            }
+
+            &:last-child {
+                > a {
+                    border-bottom-right-radius: 10px;
+                    border-top-right-radius: 0;
+                }
+
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &.vertical-tab-reverse {
+        .tab-content {
+            border-left: none;
+            border-right: 1px solid $light_grey;
+        }
+
+        .ver-nav-tab {
+            float: right;
+
+            > li {
+
+                &:first-child {
+                    > a {
+                        border-top-left-radius: 0;
+                        border-top-right-radius: 10px;
+                    }
+                }
+
+                &:last-child {
+                    > a {
+                        border-bottom-right-radius: 0;
+                        border-bottom-right-radius: 10px;
+                        border-top-right-radius: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.custom-tab-1 {
+    .nav-tabs {
+        > li {
+            > a {
+                background: transparent !important;
+                border: none;
+                border-bottom: 3px solid transparent;
+            }
+
+            &.active {
+                > a {
+                    border-bottom: 3px solid $orange;
+                }
+            }
+        }
+    }
+
+    &.vertical-tab {
+        .ver-nav-tab {
+            > li {
+                background: transparent !important;
+
+                &.active {
+                    > a {
+                        border-bottom: none;
+                        border-right: 3px solid $orange;
+                    }
+                }
+            }
+        }
+
+        &.vertical-tab-reverse {
+            > li {
+                &.active {
+                    > a {
+                        border-right: none;
+                        border-left: 3px solid $orange;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.custom-tab-2 {
+    .nav-tabs {
+        border: none;
+
+        > li {
+            > a {
+                background: transparent;
+                border-radius: 0;
+
+                &:active, &:focus, &:hover {
+                    color: $orange;
+                }
+            }
+
+            &.active, &.open {
+                > a {
+                    color: $orange;
+                    background: #f2f2f2;
+
+                    &:active, &:focus, &:hover {
+                        color: $orange;
+                        background: #f2f2f2;
+                    }
+                }
+            }
+
+            &:first-child > a,
+            &:last-child > a {
+                border-radius: 0;
+            }
+        }
+    }
+
+    &.nav-tab-reverse .nav-tabs > li {
+        &:first-child > a,
+        &:last-child > a {
+            border-radius: 0;
+        }
+    }
+
+    .tab-pane {
+        background: #f2f2f2;
+        padding: 15px !important;
+    }
+}
+
+.nav-pills {
+    > li {
+        margin-right: 5px;
+
+        > a {
+            background: #f7f7f9;
+            border: none;
+            padding: 10px 20px;
+            color: $grey;
+            margin: 0;
+            border-radius: 0;
+            text-transform: capitalize;
+
+            &:active, &:focus, &:hover {
+                background: $orange;
+                color: $white;
+            }
+        }
+
+        &.active, &.open {
+            > a {
+                background: $orange;
+                color: $white;
+
+                &:active, &:focus, &:hover {
+                    background: $orange;
+                    color: $white;
+                }
+            }
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.nav-pills-reverse {
+    .nav-pills {
+        > li {
+            float: right;
+            margin-right: 0;
+            margin-left: 5px;
+
+            &:last-child {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+.vertical-pills {
+    .tab-content {
+        overflow: hidden;
+        padding-left: 15px;
+    }
+
+    .ver-nav-pills {
+        float: left;
+
+        > li {
+            margin: 0 0 5px;
+            float: none;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &.vertical-pills-reverse {
+        .tab-content {
+            padding-left: 0;
+            padding-right: 15px;
+        }
+
+        .ver-nav-pills {
+            float: right;
+        }
+    }
+}
+
+.nav-pills-rounded {
+    &.nav-pills {
+        > li {
+            > a {
+                border-radius: 60px;
+            }
+        }
+    }
+}
+
+.nav-pills-outline {
+    &.nav-pills {
+        > li {
+            > a {
+                background-color: transparent !important;
+                border: 1px solid #f7f7f9;
+                color: $grey;
+
+                &:hover, &:active, &:focus {
+                    border-color: $orange;
+                    color: $black;
+                }
+            }
+
+            &.active {
+                > a {
+                    background-color: transparent !important;
+                    border: 1px solid $orange;
+                    color: $black;
+
+                    &:hover, &:active, &:focus {
+                        border: 1px solid $orange;
+                        color: $black;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+﻿.treeview {
+    .list-group {
+        margin-bottom: 0;
+
+        .list-group-item {
+            border: 1px solid $light_grey;
+            height: 42px;
+            padding: 10px 12px;
+
+            &.node-selected {
+                background: $orange !important;
+            }
+
+            &:hover {
+                background: #f7f7f9;
+            }
+
+            &:first-child, &:last-child {
+                border-radius: 0;
+            }
+        }
+    }
+}

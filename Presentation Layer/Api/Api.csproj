@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.1.0-preview1-final" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.1.0-preview1-final" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\BUS\BUS.Entities\BUS.Entities.csproj" />
+    <ProjectReference Include="..\..\BUS\BUS\BUS.csproj" />
+    <ProjectReference Include="..\..\CCUT\CCUT.DependencyInjector\CCUT.DependencyInjector.csproj" />
+    <ProjectReference Include="..\..\CCUT\CCUT.Logging\CCUT.Logging.csproj" />
+  </ItemGroup>
+
+</Project>

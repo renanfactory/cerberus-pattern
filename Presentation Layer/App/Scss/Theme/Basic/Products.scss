@@ -1,0 +1,26 @@
+.col-item {
+    background: $white;
+    border-radius: 6px;
+    overflow: hidden;
+
+    .photo {
+        overflow: hidden;
+        position: relative;
+
+        .options {
+            position: absolute;
+            right: 10px;
+            top: 5px;
+        }
+
+        img {
+            margin: 0 auto;
+            width: 85%;
+        }
+    }
+
+    .info {
+        background: #f7f7f9 none repeat scroll 0 0;
+        padding: 15px 0 15px 15px;
+    }
+}
